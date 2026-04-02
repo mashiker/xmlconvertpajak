@@ -16,12 +16,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Coretax XML Converter — Konversi Excel/CSV ke XML DJP Coretax",
   description: "Alat konversi data Excel/CSV ke format XML DJP Coretax. Mendukung 25+ template SPT, Bukti Potong, Faktur Pajak, dan lainnya. 100% client-side, data aman di browser.",
-  keywords: ["coretax", "djp", "xml converter", "bukti potong", "faktur pajak", "spt", "pph", "ppn", "pajak indonesia"],
-  authors: [{ name: "Coretax XML Converter" }],
+  keywords: ["coretax", "djp", "xml converter", "bukti potong", "faktur pajak", "spt", "pph", "ppn", "pajak indonesia", "alatpajak"],
+  authors: [{ name: "alatpajak.id" }],
+  metadataBase: new URL("https://alatpajak.id"),
+  alternates: {
+    canonical: "https://alatpajak.id",
+  },
   openGraph: {
     title: "Coretax XML Converter — All-in-One",
     description: "Konversi data Excel/CSV ke XML DJP Coretax dengan mudah. 25+ template, type-specific workflows, 100% client-side.",
     type: "website",
+    url: "https://alatpajak.id",
+    siteName: "alatpajak.id",
+    locale: "id_ID",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

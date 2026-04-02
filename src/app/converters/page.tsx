@@ -319,7 +319,7 @@ export default function ConvertersPage() {
                 Semua ({allTemplates.length})
               </button>
               {categories.map((cat) => {
-                const catIcon = iconMap[cat.icon] || FileText;
+                const CatIcon = iconMap[cat.icon] || FileText;
                 const count = allTemplates.filter((t) => t.category === cat.id).length;
                 return (
                   <button
@@ -331,7 +331,7 @@ export default function ConvertersPage() {
                         : 'bg-white/[0.03] text-slate-400 border border-white/[0.06] hover:bg-white/[0.06] hover:text-slate-300'
                     }`}
                   >
-                    <catIcon className="w-3.5 h-3.5" />
+                    <CatIcon className="w-3.5 h-3.5" />
                     <span>{cat.name}</span>
                     <span className="text-[10px] opacity-60">({count})</span>
                   </button>
