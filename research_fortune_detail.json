@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://stackoverflow.com/questions/77874938/updating-the-sheet-data-on-refresh-react-fortune-sheets-component",
+    "name": "Updating the Sheet data on refresh (React + Fortune-Sheets",
+    "snippet": "I am using fortune-sheets, a spreadsheet component for react. My goal here is to simply input some data to a spreadsheet and render the saved data back on ... How to select a cell and get values in Fortune Sheet React Next.js is not recognizing '@types/react' - Stack Overflow More results from stackoverflow.com",
+    "host_name": "stackoverflow.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.npmjs.com/package/%40fortune-sheet%2Freact",
+    "name": "@fortune-sheet/react - npm",
+    "snippet": "FortuneSheet is a drop-in javascript spreadsheet library that provides rich features like Excel and Google Sheets. Latest version: 1.0.4, ... Missing: Next. usage example cell editing import export",
+    "host_name": "www.npmjs.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ruilisi.github.io/fortune-sheet-docs/guide",
+    "name": "Get started | FortuneSheet Document",
+    "snippet": "FortuneSheet is a drop-in javascript spreadsheet library that provides rich features like Excel and Google Sheets. Missing: Next. example",
+    "host_name": "ruilisi.github.io",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/fileverse/fortune-sheet",
+    "name": "GitHub - fileverse/fortune-sheet: A drop-in javascript spreadsheet",
+    "snippet": "The goal of FortuneSheet is to make a feature-rich, easy-to-configure online spreadsheet that you can use out-of-the-box. This project is originated from ... Missing: Next. | Show results with: Next.",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cisternafilmfestival.com/2025/10/01/fortune-sheet-with-react-excel-like-spreadsheet-tutorial",
+    "name": "fortune-sheet with React — Excel-like Spreadsheet Tutorial",
+    "snippet": "Learn to install, set up and use fortune-sheet in React. Step-by-step tutorial, example code, performance tips, API notes & FAQ for building ... Missing: js | Show results with: js",
+    "host_name": "www.cisternafilmfestival.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-Sxbrk8T-iU",
+    "name": "React Node.js Excel Import Export Tutorial - YouTube",
+    "snippet": "... data management tools. What You'll Learn: Build Excel file upload form in ReactJS Use Node.js to parse and read Excel data Export data to ... Missing: fortune- sheet install example cell editing",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://reactjsexample.com/fortunesheet-an-online-spreedsheet-component-library-that-provides-out-of-the-box-features-just-like-excel",
+    "name": "FortuneSheet: An online spreedsheet component library that",
+    "snippet": "FortuneSheet is an online spreedsheet component library that provides out-of-the-box features just like Excel.",
+    "host_name": "reactjsexample.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://help.syncfusion.com/document-processing/excel/spreadsheet/react/environment-integration/nextjs-getting-started",
+    "name": "React Spreadsheet getting started with Next.js - Help.Syncfusion.com",
+    "snippet": "2.Select the required packages. · 3.Once complete the above mentioned steps to ... Missing: fortune- | Show results with: fortune-",
+    "host_name": "help.syncfusion.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://classic.yarnpkg.com/en/package/@fortune-sheet/react",
+    "name": "fortune-sheet/react - Yarn Classic",
+    "snippet": "FortuneSheet is a drop-in javascript spreadsheet library that provides rich features like Excel and Google Sheets. Missing: Next. example import export",
+    "host_name": "classic.yarnpkg.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://jspreadsheets.com/fortune-sheet",
+    "name": "FortuneSheet - Best JavaScript Data Grids and Spreadsheets for",
+    "snippet": "FortuneSheet is a drop-in javascript spreadsheet library that provides rich features like Excel and Google Sheets. Missing: Next. npm install editing export",
+    "host_name": "jspreadsheets.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

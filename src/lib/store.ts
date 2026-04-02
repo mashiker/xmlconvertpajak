@@ -13,6 +13,13 @@ export interface ValidationError {
   severity: 'error' | 'warning';
 }
 
+export interface CellValidationError {
+  row: number;
+  col: number;
+  message: string;
+  severity: 'error' | 'warning';
+}
+
 export interface ColumnMapping {
   sourceColumn: string;
   targetField: string;
@@ -28,22 +35,22 @@ export interface ParsedData {
 
 // Step definitions per workflow type
 const WORKFLOW_STEP_COUNTS: Record<WorkflowType, number> = {
-  bupot: 6,
-  faktur: 6,
-  spt_tahunan: 5,
-  spt_masa_ppn: 6,
-  bea_meterai: 5,
-  daftar_harta: 4,
+  bupot: 4,
+  faktur: 5,
+  spt_tahunan: 3,
+  spt_masa_ppn: 4,
+  bea_meterai: 4,
+  daftar_harta: 3,
 };
 
 // Step type to index mapping for each workflow type
 const WORKFLOW_STEP_MAP: Record<WorkflowType, Record<string, number>> = {
-  bupot: { select_template: 1, header_form: 2, upload: 3, column_mapping: 4, validate_edit: 5, generate_xml: 6 },
-  faktur: { select_template: 1, header_form: 2, lawan_transaksi: 3, upload: 4, validate_edit: 5, generate_xml: 6 },
-  spt_tahunan: { select_template: 1, upload: 2, column_mapping: 3, validate_edit: 4, generate_xml: 5 },
-  spt_masa_ppn: { select_template: 1, header_form: 2, upload: 3, column_mapping: 4, validate_edit: 5, generate_xml: 6 },
-  bea_meterai: { select_template: 1, header_form: 2, upload: 3, validate_edit: 4, generate_xml: 5 },
-  daftar_harta: { select_template: 1, upload: 2, validate_edit: 3, generate_xml: 4 },
+  bupot: { select_template: 1, header_form: 2, spreadsheet: 3, generate_xml: 4 },
+  faktur: { select_template: 1, header_form: 2, lawan_transaksi: 3, spreadsheet: 4, generate_xml: 5 },
+  spt_tahunan: { select_template: 1, spreadsheet: 2, generate_xml: 3 },
+  spt_masa_ppn: { select_template: 1, header_form: 2, spreadsheet: 3, generate_xml: 4 },
+  bea_meterai: { select_template: 1, header_form: 2, spreadsheet: 3, generate_xml: 4 },
+  daftar_harta: { select_template: 1, spreadsheet: 2, generate_xml: 3 },
 };
 
 interface ConverterState {
@@ -63,19 +70,23 @@ interface ConverterState {
   // Lawan Transaksi (Faktur only)
   lawanTransaksi: Record<string, string>;
 
-  // Upload
+  // Upload (legacy, kept for backward compat)
   uploadedFile: File | null;
   parsedData: ParsedData | null;
   selectedSheet: string;
   pasteData: string;
 
-  // Column Mapping
+  // Column Mapping (legacy)
   columnMapping: ColumnMapping[];
 
   // Validation
   validationErrors: ValidationError[];
+  cellValidationErrors: CellValidationError[];
   showOnlyErrors: boolean;
   editedData: Record<string, string>[];
+
+  // Spreadsheet
+  spreadsheetData: (string | number | boolean | null)[][];
 
   // Convert
   generatedXml: string;
@@ -104,9 +115,11 @@ interface ConverterState {
   setLawanTransaksi: (data: Record<string, string>) => void;
   updateColumnMapping: (sourceColumn: string, targetField: string, confidence: ColumnMapping['confidence']) => void;
   setValidationErrors: (errors: ValidationError[]) => void;
+  setCellValidationErrors: (errors: CellValidationError[]) => void;
   setShowOnlyErrors: (show: boolean) => void;
   setEditedData: (data: Record<string, string>[]) => void;
   updateCellData: (rowIndex: number, field: string, value: string) => void;
+  setSpreadsheetData: (data: (string | number | boolean | null)[][]) => void;
   setGeneratedXml: (xml: string) => void;
   setIsConverting: (converting: boolean) => void;
 
@@ -129,8 +142,10 @@ const initialState = {
   pasteData: '',
   columnMapping: [] as ColumnMapping[],
   validationErrors: [] as ValidationError[],
+  cellValidationErrors: [] as CellValidationError[],
   showOnlyErrors: false,
   editedData: [] as Record<string, string>[],
+  spreadsheetData: [] as (string | number | boolean | null)[][],
   generatedXml: '',
   isConverting: false,
 };
@@ -199,8 +214,10 @@ export const useConverterStore = create<ConverterState>((set, get) => ({
       pasteData: '',
       columnMapping: [],
       validationErrors: [],
+      cellValidationErrors: [],
       showOnlyErrors: false,
       editedData: [],
+      spreadsheetData: [],
       generatedXml: '',
       isConverting: false,
     });
@@ -226,6 +243,7 @@ export const useConverterStore = create<ConverterState>((set, get) => ({
 
   // Validation
   setValidationErrors: (errors) => set({ validationErrors: errors }),
+  setCellValidationErrors: (errors) => set({ cellValidationErrors: errors }),
   setShowOnlyErrors: (show) => set({ showOnlyErrors: show }),
   setEditedData: (data) => set({ editedData: data }),
   updateCellData: (rowIndex, field, value) =>
@@ -236,6 +254,9 @@ export const useConverterStore = create<ConverterState>((set, get) => ({
       }
       return { editedData: newData };
     }),
+
+  // Spreadsheet
+  setSpreadsheetData: (data) => set({ spreadsheetData: data }),
 
   // Convert
   setGeneratedXml: (xml) => set({ generatedXml: xml }),

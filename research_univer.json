@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/dream-num/Luckysheet",
+    "name": "dream-num/Luckysheet",
+    "snippet": "30 Oct 2025 — Introduction. Luckysheet is an online spreadsheet like excel that is powerful, simple to configure, and completely open source. Read more",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/reactjs/comments/1gqxcou/excel_like_sheets_in_react",
+    "name": "Excel like sheets in react. : r/reactjs",
+    "snippet": "Tanstack Table is OSS, and very well liked by the community. I've never used it but the fact it's open source makes it attractive. Probably your ... Read more",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.univer.ai/posts/10-best-spreadsheet-components-for-developers-in-2025",
+    "name": "10 Best Spreadsheet Components for Developers in 2025",
+    "snippet": "14 Aug 2025 — Luckysheet is an open-source online spreadsheet similar to Google Sheets, built with pure JavaScript. License: MIT; Key features ... Read more",
+    "host_name": "blog.univer.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bestofjs.org/projects?tags=spreadsheet",
+    "name": "Spreadsheet projects",
+    "snippet": "Table · Spreadsheet ... An open-source headless spreadsheet for business web apps. Math · Spreadsheet. Read more",
+    "host_name": "bestofjs.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.xda-developers.com/grist-free-open-source-excel-alternative",
+    "name": "Goodbye Excel, hello Grist: The open-source spreadsheet",
+    "snippet": "11 Aug 2025 — It's an open-source, self-hostable spreadsheet and database app that makes Excel feel like a fossil. It supports most Excel functions, handles ... Read more",
+    "host_name": "www.xda-developers.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/front-end-world/top-spreadsheet-libraries-for-react-next-js-in-2025-6f7a02ffc3ca",
+    "name": "Top Spreadsheet Libraries for React/Next.js in 2025",
+    "snippet": "Jspreadsheet is an open-source, Excel-like table component designed for rich data manipulation. Link: https://jspreadsheet.com/. Press enter ... Read more",
+    "host_name": "medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.getgrist.com/lookup/excel-alternative",
+    "name": "Excel Alternative | Open-Source & Self-Hostable",
+    "snippet": "17 Dec 2025 — See how Grist combines spreadsheet flexibility with database integrity to create the modern Microsoft Excel alternative. No more VLOOKUPs.",
+    "host_name": "www.getgrist.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=40171216",
+    "name": "Open-Source Alternative for Google Sheets, Slides, Docs",
+    "snippet": "26 Apr 2024 — FrameMaker was great, was the tool used by most US military contractors in 90s. Many well known aircraft were designed using this document tool. Read more",
+    "host_name": "news.ycombinator.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://jspreadsheets.com",
+    "name": "jspreadsheets - Best JavaScript Data Grids and Spreadsheets",
+    "snippet": "FortuneSheet is a drop-in javascript spreadsheet library that provides rich features like Excel and Google Sheets. ... This website uses an open source software ... Read more",
+    "host_name": "jspreadsheets.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://zapier.com/blog/best-spreadsheet-excel-alternative",
+    "name": "The 9 best Excel alternatives and spreadsheet software",
+    "snippet": "LibreOffice is very user-friendly, with native support for Excel files and a healthy number of templates to save time. Just because Calc is free and open source ... Read more",
+    "host_name": "zapier.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

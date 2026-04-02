@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://dev.to/ansonch/top-5-react-spreadsheet-libraries-for-2024-4ceb",
+    "name": "📝 Top 5 React Spreadsheet Libraries for 2024 🚀",
+    "snippet": "Oct 9, 2024 — JSSpreadsheet is a lightweight JavaScript library which offers a variety of spreadsheet-like controls. It provides a set of Excel-like features ...",
+    "host_name": "dev.to",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.univer.ai/posts/10-best-spreadsheet-components-for-developers-in-2025",
+    "name": "10 Best Spreadsheet Components for Developers in 2025",
+    "snippet": "Aug 14, 2025 — AG Grid is one of the most feature-complete data grids in the market, supporting spreadsheet-like interactions. License: MIT (Community) + ...",
+    "host_name": "blog.univer.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pylogix.com/the-top-react-spreadsheet-tools",
+    "name": "The Top React Spreadsheet Tools - Pylogix",
+    "snippet": "Oct 31, 2024 — Handsontable is a minimalistic data grid component that couples its features with a spreadsheet UI. The result is a lightweight spreadsheet ...",
+    "host_name": "pylogix.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/webdev/comments/1ojyh3r/looking_for_performant_excellike_grid_component",
+    "name": "Looking for performant Excel-like grid component : r/webdev",
+    "snippet": "If you need something fast and feature-rich, AG Grid or Handsontable are top -tier options. For React projects, TanStack Table is great if you ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.syncfusion.com/blogs/post/top-react-data-grid-libraries",
+    "name": "5 Best React Data Grid Libraries for Data‑Driven Apps in",
+    "snippet": "Jan 27, 2026 — AG Grid is a React Data Grid library that provides a structured way to display data in rows and columns. It can be integrated into React ...",
+    "host_name": "www.syncfusion.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@pankaj01/react-data-grids-navigating-options-for-advanced-features-21c2c5ea9223",
+    "name": "React Data Grids: Navigating Options for Advanced Features",
+    "snippet": "Handsontable : This is designed to be an Excel - like spreadsheet component. It excels at in-cell editing , formulas , and advanced clipboard ...",
+    "host_name": "medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bryntum.com/blog/the-best-javascript-data-grids-in-2025",
+    "name": "The best JavaScript data grids in 2025",
+    "snippet": "Nov 5, 2025 — Bryntum Grid, AG Grid , or Kendo UI Grid. Spreadsheet functionality, Excel-like functionality: formulas and keyboard shortcuts, Handsontable.",
+    "host_name": "bryntum.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://svar.dev/blog/top-react-alternatives-to-ag-grid",
+    "name": "Best Free Ag-Grid Alternatives for React in 2026",
+    "snippet": "Jan 15, 2026 — Discover the best open-source alternatives to Ag - Grid for React in 2026. Compare TanStack Table, SVAR DataGrid, MUI X, and more to choose ...",
+    "host_name": "svar.dev",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://handsontable.com",
+    "name": "Handsontable is a JavaScript data grid that looks and feels",
+    "snippet": "JavaScript data grid that looks and feels like a spreadsheet. Works with React , Angular, and Vue.",
+    "host_name": "handsontable.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.infragistics.com/blogs/ag-grid-alternatives",
+    "name": "8 AG Grid Alternatives for Your Next Project",
+    "snippet": "Feb 17, 2026 — AG Grid is one of the most popular and feature-rich JavaScript Data Grids available today. But are there any AG grid alternatives? Yes.",
+    "host_name": "www.infragistics.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -5,7 +5,7 @@
 
 export type FieldType = 'text' | 'number' | 'date' | 'npwp' | 'currency' | 'select' | 'boolean';
 export type WorkflowType = 'bupot' | 'faktur' | 'spt_tahunan' | 'spt_masa_ppn' | 'bea_meterai' | 'daftar_harta';
-export type StepType = 'select_template' | 'header_form' | 'lawan_transaksi' | 'upload' | 'column_mapping' | 'validate_edit' | 'generate_xml';
+export type StepType = 'select_template' | 'header_form' | 'lawan_transaksi' | 'spreadsheet' | 'generate_xml';
 
 export interface TemplateField {
   name: string;
@@ -137,14 +137,12 @@ const kodeObjekPajakOpts = { field: 'KodeObjekPajak', options: [
 ]};
 
 // ============================================================
-// COMMON WORKFLOW STEP DEFINITIONS
+// COMMON WORKFLOW STEP DEFINITIONS (Simplified with Spreadsheet)
 // ============================================================
 const BUPOT_STEPS: WizardStep[] = [
   { label: 'Pilih Template', description: 'Pilih jenis Bukti Potong', type: 'select_template', optional: false },
   { label: 'Isi Header', description: 'Data Pemotong & Masa Pajak', type: 'header_form', optional: false },
-  { label: 'Upload Data', description: 'Import file Excel/CSV', type: 'upload', optional: false },
-  { label: 'Peta Kolom', description: 'Petakan kolom ke field XML', type: 'column_mapping', optional: false },
-  { label: 'Validasi & Edit', description: 'Periksa & perbaiki data', type: 'validate_edit', optional: false },
+  { label: 'Isi Data', description: 'Entry data di spreadsheet', type: 'spreadsheet', optional: false },
   { label: 'Generate XML', description: 'Konversi ke XML Coretax', type: 'generate_xml', optional: false },
 ];
 
@@ -152,40 +150,33 @@ const FAKTUR_STEPS: WizardStep[] = [
   { label: 'Pilih Template', description: 'Pilih jenis Faktur Pajak', type: 'select_template', optional: false },
   { label: 'Isi Header', description: 'Data PKP & Faktur', type: 'header_form', optional: false },
   { label: 'Lawan Transaksi', description: 'Data Pembeli', type: 'lawan_transaksi', optional: false },
-  { label: 'Upload Data', description: 'Import data barang/jasa', type: 'upload', optional: false },
-  { label: 'Validasi & Edit', description: 'Periksa & perbaiki data', type: 'validate_edit', optional: false },
+  { label: 'Isi Data', description: 'Entry data barang/jasa', type: 'spreadsheet', optional: false },
   { label: 'Generate XML', description: 'Konversi ke XML Coretax', type: 'generate_xml', optional: false },
 ];
 
 const SPT_TAHUNAN_STEPS: WizardStep[] = [
   { label: 'Pilih Template', description: 'Pilih jenis lampiran', type: 'select_template', optional: false },
-  { label: 'Upload Data', description: 'Import file Excel/CSV', type: 'upload', optional: false },
-  { label: 'Peta Kolom', description: 'Petakan kolom ke field XML', type: 'column_mapping', optional: false },
-  { label: 'Validasi & Edit', description: 'Periksa & perbaiki data', type: 'validate_edit', optional: false },
+  { label: 'Isi Data', description: 'Entry data di spreadsheet', type: 'spreadsheet', optional: false },
   { label: 'Generate XML', description: 'Konversi ke XML Coretax', type: 'generate_xml', optional: false },
 ];
 
 const SPT_MASA_PPN_STEPS: WizardStep[] = [
   { label: 'Pilih Template', description: 'Pilih jenis lampiran', type: 'select_template', optional: false },
   { label: 'Isi Header', description: 'Data PKP & Masa Pajak', type: 'header_form', optional: false },
-  { label: 'Upload Data', description: 'Import file Excel/CSV', type: 'upload', optional: false },
-  { label: 'Peta Kolom', description: 'Petakan kolom ke field XML', type: 'column_mapping', optional: false },
-  { label: 'Validasi & Edit', description: 'Periksa & perbaiki data', type: 'validate_edit', optional: false },
+  { label: 'Isi Data', description: 'Entry data di spreadsheet', type: 'spreadsheet', optional: false },
   { label: 'Generate XML', description: 'Konversi ke XML Coretax', type: 'generate_xml', optional: false },
 ];
 
 const BEA_METERAI_STEPS: WizardStep[] = [
   { label: 'Pilih Template', description: 'Pilih jenis lampiran', type: 'select_template', optional: false },
   { label: 'Isi Header', description: 'Data Pemungut', type: 'header_form', optional: false },
-  { label: 'Upload Data', description: 'Import data meterai', type: 'upload', optional: false },
-  { label: 'Validasi & Edit', description: 'Periksa & perbaiki data', type: 'validate_edit', optional: false },
+  { label: 'Isi Data', description: 'Entry data meterai', type: 'spreadsheet', optional: false },
   { label: 'Generate XML', description: 'Konversi ke XML Coretax', type: 'generate_xml', optional: false },
 ];
 
 const DAFTAR_HARTA_STEPS: WizardStep[] = [
   { label: 'Pilih Kategori', description: 'Pilih kategori harta', type: 'select_template', optional: false },
-  { label: 'Upload Data', description: 'Import data harta', type: 'upload', optional: false },
-  { label: 'Validasi & Edit', description: 'Periksa & perbaiki data', type: 'validate_edit', optional: false },
+  { label: 'Isi Data', description: 'Entry data harta', type: 'spreadsheet', optional: false },
   { label: 'Generate XML', description: 'Konversi ke XML Coretax', type: 'generate_xml', optional: false },
 ];
 

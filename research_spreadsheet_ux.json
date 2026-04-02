@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://ux.stackexchange.com/questions/145403/what-are-some-best-practices-on-building-large-forms-for-data-entry",
+    "name": "What are some best practices on building large forms for data entry?",
+    "snippet": "Here are some brief notes: Chunking. Big, complex forms can be intimidating for users. Break them into smaller 'chunks' wherever possible. web app - Question about editing data and when/how to present forms Best practices for long data entry forms - UX Stack Exchange More results from ux.stackexchange.com Missing: spreadsheet pattern inline",
+    "host_name": "ux.stackexchange.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.pencilandpaper.io/articles/ux-pattern-analysis-enterprise-data-tables",
+    "name": "Data Table Design UX Patterns & Best Practices - Pencil & Paper",
+    "snippet": "Learn about data table design UX. Best practices for column layout, table actions, and viewing options in your enterprise software. Missing: replacement | Show results with: replacement",
+    "host_name": "www.pencilandpaper.io",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ixdf.org/literature/article/ui-form-design",
+    "name": "How to Design UI Forms in 2026: Your Best Guide - IxDF",
+    "snippet": "Discover best practices and examples for designing user-friendly and visually appealing UI forms. Aim for enhanced user engagement and ... Missing: spreadsheet | Show results with: spreadsheet",
+    "host_name": "ixdf.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nngroup.com/articles/web-form-design",
+    "name": "Website Forms Usability: Top 10 Recommendations - NN/G",
+    "snippet": "Best Practices for Web Form Design · Keep it short. · Visually group related labels and fields. · Present fields in a single column layout. · Use ...",
+    "host_name": "www.nngroup.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/design-bootcamp/design-a-better-form-b9adaa372fb3",
+    "name": "Design a better form. For desktop & mobile screens | by Allie Paschal",
+    "snippet": "I have compiled a list of comprehensive tips for form design from user testing as well as tried and true resources. So let's build a better form. Missing: spreadsheet | Show results with: spreadsheet",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stephaniewalter.design/blog/essential-resources-design-complex-data-tables",
+    "name": "Enterprise UX: essential resources to design complex data tables",
+    "snippet": "Data Table Design UX Patterns: a step by step guide to help you with table, from elements to viewing options, basics navigation, actions inside ... Missing: replacement | Show results with: replacement",
+    "host_name": "stephaniewalter.design",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://uxdesign.cc/best-practices-for-form-design-ff5de6ca8e5f",
+    "name": "Best practices for form design - UX Collective",
+    "snippet": "20 tips to boost form usability · 1. Minimizing the Input fields: · 2. One Column Layout: · 3. Multiple Steps: · 4. Ask the easy questions first: · 5 ...",
+    "host_name": "uxdesign.cc",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cxl.com/blog/form-design-best-practices",
+    "name": "Form Design Principles: 13 Empirically Backed Best Practices - CXL",
+    "snippet": "Less is more: remove form fields. 2. Single-column beats multi-column forms. 3. Communicate errors clearly. 4. Use inline form-field validation.",
+    "host_name": "cxl.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.uxdt.nic.in/guidelines/ux-design-guidelines/forms-and-data-entry",
+    "name": "Forms and Data Entry - UX Design Guidelines - UxDT",
+    "snippet": "Designing forms that are simple, intuitive, and efficient is essential to ensuring a smooth user experience. Poorly designed forms can frustrate users, lead to ...",
+    "host_name": "www.uxdt.nic.in",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/uxdesignworld/posts/inline-editing-in-tables-good-or-bad-ux-design-inline-editing-is-a-quick-and-eas/935124238422689",
+    "name": "Inline Editing in Tables: Good or Bad UX Design? Inline  - Facebook",
+    "snippet": "Inline editing works well for a limited set of data. For complex data tables with many columns, it may become difficult for users to perform ... Missing: pattern | Show results with: pattern",
+    "host_name": "www.facebook.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

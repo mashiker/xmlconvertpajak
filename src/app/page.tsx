@@ -1,6 +1,7 @@
 'use client';
 
 import { Suspense, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useConverterStore } from '@/lib/store';
 import { getTemplateById } from '@/lib/templates';
@@ -8,21 +9,35 @@ import { WizardSteps } from '@/components/converter/WizardSteps';
 import { TemplateSelector } from '@/components/converter/TemplateSelector';
 import { HeaderForm } from '@/components/converter/HeaderForm';
 import { LawanTransaksiForm } from '@/components/converter/LawanTransaksiForm';
-import { DataUpload } from '@/components/converter/DataUpload';
-import { ColumnMapping } from '@/components/converter/ColumnMapping';
-import { ValidationEditor } from '@/components/converter/ValidationEditor';
 import { ConvertDownload } from '@/components/converter/ConvertDownload';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Shield, Lock, Zap, ChevronRight, LayoutGrid } from 'lucide-react';
+
+// Dynamically import SpreadsheetEditor (client-only)
+const SpreadsheetEditor = dynamic(
+  () => import('@/components/converter/SpreadsheetEditor').then(m => ({ default: m.SpreadsheetEditor })),
+  { ssr: false, loading: () => <SpreadsheetLoading /> }
+);
+
+function SpreadsheetLoading() {
+  return (
+    <div className="flex items-center justify-center py-20">
+      <div className="text-center space-y-3">
+        <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 mx-auto flex items-center justify-center animate-pulse">
+          <Zap className="w-6 h-6 text-emerald-600" />
+        </div>
+        <p className="text-sm text-slate-500">Memuat spreadsheet...</p>
+      </div>
+    </div>
+  );
+}
 
 function getStepComponent(stepType: string | undefined) {
   switch (stepType) {
     case 'select_template': return <TemplateSelector />;
     case 'header_form': return <HeaderForm />;
     case 'lawan_transaksi': return <LawanTransaksiForm />;
-    case 'upload': return <DataUpload />;
-    case 'column_mapping': return <ColumnMapping />;
-    case 'validate_edit': return <ValidationEditor />;
+    case 'spreadsheet': return <SpreadsheetEditor />;
     case 'generate_xml': return <ConvertDownload />;
     default: return <TemplateSelector />;
   }

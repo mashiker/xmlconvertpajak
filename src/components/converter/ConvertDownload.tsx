@@ -13,12 +13,11 @@ import {
   FileCode, ChevronDown, ChevronRight, Sparkles,
   PartyPopper,
 } from 'lucide-react';
-import { generateXml } from '@/lib/xml-generator';
+import { generateXmlFromSpreadsheet } from '@/lib/xml-generator';
 
 export function ConvertDownload() {
   const selectedTemplate = useConverterStore((s) => s.selectedTemplate);
-  const parsedData = useConverterStore((s) => s.parsedData);
-  const columnMapping = useConverterStore((s) => s.columnMapping);
+  const spreadsheetData = useConverterStore((s) => s.spreadsheetData);
   const headerMapping = useConverterStore((s) => s.headerMapping);
   const lawanTransaksi = useConverterStore((s) => s.lawanTransaksi);
   const generatedXml = useConverterStore((s) => s.generatedXml);
@@ -31,14 +30,23 @@ export function ConvertDownload() {
   const [copied, setCopied] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
+  // Check if there's data to convert
+  const hasData = spreadsheetData.length > 0 &&
+    spreadsheetData.some(row => row.some(cell => cell != null && String(cell).trim() !== ''));
+
   const handleConvert = useMemo(() => {
     return () => {
-      if (!selectedTemplate || !parsedData) return;
+      if (!selectedTemplate || !hasData) return;
       setIsConverting(true);
 
       setTimeout(() => {
         try {
-          const xml = generateXml(selectedTemplate, parsedData, columnMapping, headerMapping, lawanTransaksi);
+          const xml = generateXmlFromSpreadsheet(
+            selectedTemplate,
+            spreadsheetData,
+            headerMapping,
+            lawanTransaksi
+          );
           setGeneratedXml(xml);
           setShowSuccess(true);
           setTimeout(() => setShowSuccess(false), 3000);
@@ -48,7 +56,7 @@ export function ConvertDownload() {
         setIsConverting(false);
       }, 1000);
     };
-  }, [selectedTemplate, parsedData, columnMapping, headerMapping, lawanTransaksi, setGeneratedXml, setIsConverting]);
+  }, [selectedTemplate, spreadsheetData, headerMapping, lawanTransaksi, hasData, setGeneratedXml, setIsConverting]);
 
   const handleDownload = () => {
     if (!generatedXml) return;
@@ -119,6 +127,7 @@ export function ConvertDownload() {
             <Button
               onClick={handleConvert}
               size="lg"
+              disabled={!hasData}
               className="gap-2 btn-primary-gradient btn-shine rounded-2xl px-10 h-14 text-base"
             >
               <Sparkles className="w-5 h-5" />

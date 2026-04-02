@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.simple-table.com/blog/best-react-table-libraries-2026",
+    "name": "Best React Table Libraries 2026: Complete Comparison Guide",
+    "snippet": "Compare the best React table libraries in 2026: Simple Table, TanStack Table, AG Grid, Material React Table, and more. See features, bundle sizes, pricing, ... Missing: fortune- 2025",
+    "host_name": "www.simple-table.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.univer.ai/posts/10-best-spreadsheet-components-for-developers-in-2025",
+    "name": "10 Best Spreadsheet Components for Developers in 2025",
+    "snippet": "When deciding which spreadsheet component to use, consider: Performance: Can it handle your dataset size efficiently? Feature Set: Do you need ... Missing: tanstack comparison\nHandsontable is a popular JavaScript data grid with spreadsheet-like features, widely used for business apps and financial dashboards. License: ...",
+    "host_name": "blog.univer.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bryntum.com/blog/the-best-javascript-data-grids-in-2025",
+    "name": "The best JavaScript data grids in 2025 - Bryntum",
+    "snippet": "We'll compare their features, pricing, pros, and cons to help you choose the best grid for your use case. Whether you're using React or want a ... Missing: tanstack | Show results with: tanstack",
+    "host_name": "bryntum.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/front-end-world/top-spreadsheet-libraries-for-react-next-js-in-2025-6f7a02ffc3ca",
+    "name": "Top Spreadsheet Libraries for React/Next.js in 2025 - Medium",
+    "snippet": "In this article, we'll discuss the top 10 spreadsheet libraries for React and Next.js, including their features, use cases, and installation procedures. Missing: comparison | Show results with: comparison\nHandsontable, AG Grid, and Syncfusion are best for enterprise applications with extensive features. react-table is optimal for lightweight, high ... Missing: univer | Show results with: univer",
+    "host_name": "medium.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.cisternafilmfestival.com/2025/10/01/fortune-sheet-with-react-excel-like-spreadsheet-tutorial",
+    "name": "fortune-sheet with React — Excel-like Spreadsheet Tutorial",
+    "snippet": "Learn to install, set up and use fortune-sheet in React. Step-by-step tutorial, example code, performance tips, API notes & FAQ for building ... Missing: tanstack comparison\nLearn to install, set up and use fortune-sheet in React. Step-by-step tutorial, example code, performance tips, API notes & FAQ for building ... Missing: univer tanstack",
+    "host_name": "www.cisternafilmfestival.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/webdev/comments/1ojyh3r/looking_for_performant_excellike_grid_component",
+    "name": "Looking for performant Excel-like grid component : r/webdev - Reddit",
+    "snippet": "If you need something fast and feature-rich, AG Grid or Handsontable are top-tier options. For React projects, TanStack Table is great if ... r/javascript on Reddit: [AskJS] Why Handsontable Drives Me Crazy Best Datagrid Library for React? : r/reactjs - Reddit More results from www.reddit.com Missing: univer comparison 2025",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://handsontable.com/blog/spreadsheet-day-2025-why-the-humble-spreadsheet-still-rules-the-world",
+    "name": "Spreadsheet Day 2025: Why the Humble Spreadsheet Still Rules",
+    "snippet": "Handsontable is a JavaScript Data Grid Component with Spreadsheet Look & Feel. Available for React, Vue and Angular.",
+    "host_name": "handsontable.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.webix.com/top-js-data-grids",
+    "name": "Best JavaScript Data Grid to Use in 2026 - Webix Blog",
+    "snippet": "Handsontable is a JS data grid that combines the functionality of a table and a spreadsheet, providing an interactive Excel-like experience to ...",
+    "host_name": "blog.webix.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/TanStack/table/discussions/3963",
+    "name": "How does TanStack/react-table compare to a spreadsheet? #3963",
+    "snippet": "@tanstack/react-table is mostly focussed on the headless logic for displaying data in columns, rows, pagination, grouping, expanding, filtering, searching, etc. Missing: fortune- univer performance 2025",
+    "host_name": "github.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://jspreadsheet.com/alternatives/handsontable",
+    "name": "Best Handsontable Alternative - Jspreadsheet",
+    "snippet": "How does Jspreadsheet compare to Handsontable? Explore the four key differences in features, pricing, technical capabilities, and usage limitations. Missing: tanstack 2025",
+    "host_name": "jspreadsheet.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

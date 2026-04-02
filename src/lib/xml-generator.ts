@@ -6,8 +6,65 @@
 import type { CoretaxTemplate } from './templates';
 import type { ColumnMapping, ParsedData } from './store';
 
+// ============================================================
+// Spreadsheet data conversion helpers
+// ============================================================
+
 /**
- * Generate XML based on template workflow type
+ * Convert spreadsheet 2D array to ParsedData + ColumnMapping format.
+ * spreadsheetData[row][col] maps to detailFields[col] by index.
+ */
+function spreadsheetToParsedData(
+  spreadsheetData: (string | number | boolean | null)[][],
+  template: CoretaxTemplate
+): { data: ParsedData; columnMapping: ColumnMapping[] } {
+  const fields = template.detailFields;
+  const headers = fields.map(f => f.name);
+  const columnMapping: ColumnMapping[] = fields.map(f => ({
+    sourceColumn: f.name,
+    targetField: f.name,
+    confidence: 'exact' as const,
+  }));
+
+  // Filter out empty rows and convert to Record format
+  const rows: Record<string, string>[] = [];
+  for (const row of spreadsheetData) {
+    const isEmpty = row.every(cell => cell == null || String(cell).trim() === '');
+    if (isEmpty) continue;
+
+    const record: Record<string, string> = {};
+    for (let col = 0; col < fields.length; col++) {
+      if (col < row.length) {
+        record[fields[col].name] = row[col] != null ? String(row[col]) : '';
+      } else {
+        record[fields[col].name] = '';
+      }
+    }
+    rows.push(record);
+  }
+
+  return {
+    data: { headers, rows },
+    columnMapping,
+  };
+}
+
+/**
+ * Generate XML from spreadsheet 2D array data.
+ * This is the new entry point for the spreadsheet workflow.
+ */
+export function generateXmlFromSpreadsheet(
+  template: CoretaxTemplate,
+  spreadsheetData: (string | number | boolean | null)[][],
+  headerMapping: Record<string, string>,
+  lawanTransaksi?: Record<string, string>
+): string {
+  const { data, columnMapping } = spreadsheetToParsedData(spreadsheetData, template);
+  return generateXml(template, data, columnMapping, headerMapping, lawanTransaksi);
+}
+
+/**
+ * Generate XML based on template workflow type (legacy interface)
  */
 export function generateXml(
   template: CoretaxTemplate,

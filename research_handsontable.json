@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://forum.handsontable.com/t/handsontable-crashes-on-production-build-in-next-js-12-v14-5/8482",
+    "name": "Handsontable Crashes on Production Build in Next.js 12 (v14.5)",
+    "snippet": "I'm encountering a critical issue with Handsontable (v14.5) when running my Next.js 12 project in production mode. Missing: integration validation custom XML JSON",
+    "host_name": "forum.handsontable.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/18140791/handsontable-custom-cell-type",
+    "name": "Handsontable custom cell type - Stack Overflow",
+    "snippet": "handsontable({ columns: [ {data : \"id\", type : \"numeric\"} ,{data ... handsontable Js update cell synonization · Hot Network Questions · How ...",
+    "host_name": "stackoverflow.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://handsontable.com/docs/javascript-data-grid/cell-validator",
+    "name": "JavaScript Data Grid - Cell validator - Handsontable",
+    "snippet": "Validate data added or changed by the user, with predefined or custom rules. Validation helps you make sure that the data matches the expected format. Missing: Next. XML",
+    "host_name": "handsontable.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://handsontable.com/docs/react-data-grid/custom-cells",
+    "name": "Custom Cell Definitions - React Data Grid - Handsontable",
+    "snippet": "Validate data added or changed by the user, with predefined or custom rules. Validation helps you make sure that the data matches the expected format. Missing: XML JSON\nVali date data added or changed by the user, with predefined or custom rules. Validation helps you make sure that the data matches the expected format.",
+    "host_name": "handsontable.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forum.handsontable.com/t/gh-6466-react-how-to-render-a-custom-component-in-a-cell/4660",
+    "name": "[GH #6466] React How to render a custom component in a cell?",
+    "snippet": "This custom react component basically renders a “typeahead” input box that allows the user to pick a username (that comes from the API) and select it and ... Missing: integration validation data export XML",
+    "host_name": "forum.handsontable.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forum.handsontable.com/t/getting-cell-validation-state-in-custom-renderer/4344",
+    "name": "Getting cell validation state in custom Renderer - Handsontable Forum",
+    "snippet": "I am using the validator function on a cell passing in a regex. When I use the standard out-of-box cell renderer, it correctly changes the color of the cell to ... Missing: Next. integration export XML JSON\n26 Apr 2020 — I am using the validator function on a cell passing in a regex. When I use the standard out-of-box cell renderer, it correctly changes the color of the cell to ... Read more",
+    "host_name": "forum.handsontable.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://handsontable.com/docs/javascript-data-grid/custom-cells",
+    "name": "JavaScript Data Grid - Simplified Custom Cell Definitions",
+    "snippet": "Overview. This document introduces a convention-over-configuration (opens new window), declarative approach to creating custom cell types in Handsontable. Missing: XML JSON\nOverview. This document introduces a convention-over-configuration (opens new window), declarative approach to creating custom cell types in Handsontable . Read more",
+    "host_name": "handsontable.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forum.handsontable.com/t/cell-validation-lost-when-parent-component-re-renders/8669",
+    "name": "Cell validation lost when parent component re-renders - Questions",
+    "snippet": "I am using the React version of Handsontable. When placed inside a parent component, any changes to the parent component naturally re-render ... Missing: Next. integration custom formula export XML JSON",
+    "host_name": "forum.handsontable.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/39892219/reactjs-with-handsontable-cell-validation-function-is-not-invoking",
+    "name": "Reactjs With Handsontable cell validation function is not invoking",
+    "snippet": "Are you trying to apply the negativeValueRenderer to each cell, or just the Age column? Give this a shot: Copy. Missing: custom | Show results with: custom",
+    "host_name": "stackoverflow.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://forum.handsontable.com/t/insert-a-json-data-into-handsontable/3642",
+    "name": "Insert a json data into handsontable - Questions",
+    "snippet": "Hi, I want to load the json data into handsontable. The load function is not working. I have already referred to this documentation ... Missing: React Next. integration validation custom export XML",
+    "host_name": "forum.handsontable.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
