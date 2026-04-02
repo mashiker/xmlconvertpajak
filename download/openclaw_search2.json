@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://github.com/HKUDS/ClawWork",
+    "name": "HKUDS/ClawWork - OpenClaw as Your AI Coworker",
+    "snippet": "\"ClawWork: OpenClaw as Your AI Coworker - $15K earned in 11 Hours\" - HKUDS/ClawWork.",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/nearai/ironclaw",
+    "name": "IronClaw is OpenClaw inspired implementation in Rust",
+    "snippet": "3 days ago — Transparency by design - Open source , auditable, no hidden telemetry or data harvesting; Self-expanding capabilities - Build new tools on the ... Read more",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.open-clawai.com/en/community/github",
+    "name": "OpenClaw on GitHub - OpenClaw Source Code & Issues",
+    "snippet": "OpenClaw (formerly Moltbot) GitHub repository . View source code, report issues, contribute to the project, and stay updated with releases.",
+    "host_name": "www.open-clawai.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/AbuZar-Ansarii/Clawbot",
+    "name": "AbuZar-Ansarii/Clawbot - OpenClaw Setup Guide for Android",
+    "snippet": "OpenClaw Android Setup Guide Transform any old Android device into a 24/7 AI agent running locally . This guide provides step-by-step instructions for ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/ibelick/webclaw",
+    "name": "ibelick/webclaw: Fast web client for OpenClaw",
+    "snippet": "Fast web client for OpenClaw . Contribute to ibelick/webclaw development by creating an account on GitHub ... Open Source. COMMUNITY. GitHub SponsorsFund open ... Read more",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/openclaw",
+    "name": "openclaw · GitHub",
+    "snippet": "Your personal, open source AI assistant. openclaw has 23 repositories available. Follow their code on GitHub.",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.openclaw.ai/install",
+    "name": "Install - OpenClaw",
+    "snippet": "It detects your OS, installs Node if needed, installs OpenClaw, and launches onboarding. For all flags and CI/automation options, see Installer internals. macOS, Linux, or Windows — both native Windows and WSL2 are supported; WSL2 is more stable. See Windows. Or skip the link and use pnpm openclaw ... from inside the repo.",
+    "host_name": "docs.openclaw.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.getopenclaw.ai/blog/openclaw-github",
+    "name": "OpenClaw GitHub: Install from Source & Contribute",
+    "snippet": "The OpenClaw GitHub repo — install from source, star the project, contribute code, report issues, and track releases.",
+    "host_name": "www.getopenclaw.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.kdnuggets.com/10-github-repositories-to-master-openclaw",
+    "name": "10 GitHub Repositories to Master OpenClaw - KDnuggets",
+    "snippet": "Learn OpenClaw by exploring key GitHub repositories covering agents, skills, automation, memory systems, and deployment tools.",
+    "host_name": "www.kdnuggets.com",
+    "rank": 8,
+    "date": "Mar 27, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://openclaws.io",
+    "name": "OpenClaw | The AI That Actually Does Things",
+    "snippet": "OpenClaw is a free, open-source AI assistant that runs on your machine. Automate tasks across WhatsApp, Telegram, Discord, and 30+ platforms with Claude, GPT, or local models. 310k+ GitHub stars.",
+    "host_name": "openclaws.io",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

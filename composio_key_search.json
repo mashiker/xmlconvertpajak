@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://composio.dev/auth/instantly",
+    "name": "How to create Instantly auth credentials and configure it in Composio",
+    "snippet": "Log in to your Instantly Dashboard. Image 1 ; Navigate to Settings. Open the Integrations or API section (label may vary by account). Click Generate API Key. Missing: format ck_",
+    "host_name": "composio.dev",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://composio.dev/toolkits/customerio",
+    "name": "Customerio MCP Integration for AI Agents - Composio Dev",
+    "snippet": "Yes, Customerio requires you to configure your own API key credentials. Once set up, Composio handles secure credential storage and API request handling for you ... Missing: format ck_ dashboard.",
+    "host_name": "composio.dev",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://composio.dev/toolkits/composio/framework/openclaw",
+    "name": "How to integrate Composio MCP with OpenClaw",
+    "snippet": "2. Copy the API Key from dashboard.composio. · 3. Setup OpenClaw Config openclaw config set plugins. · 4. Restart ... Missing: format client",
+    "host_name": "composio.dev",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.composio.dev/reference",
+    "name": "API Reference - Composio Docs",
+    "snippet": "Composio powers tool discovery, execution, authentication, and context management for your AI agents with 1000+ toolkits. This reference covers our REST ...",
+    "host_name": "docs.composio.dev",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://composio.dev/toolkits/helpdesk",
+    "name": "Helpdesk MCP Integration for AI Agents - Composio",
+    "snippet": "Yes, Helpdesk requires you to configure your own API key credentials. Once set up, Composio handles secure credential storage and API request handling for you. Missing: format ck_ dashboard.",
+    "host_name": "composio.dev",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  }
+]

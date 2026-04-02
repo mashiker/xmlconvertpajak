@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The screenshot displays a client details page for **OpenClaw** (an open - source personal AI assistant).  \n\n### API Key:  \nThe API key is `ck_0VKZMyUJfgXArqN_gdXj`, created on March 26, 2026. There are “Copy” and “Regenerate” buttons associated with it.  \n\n### Project Name:  \nThe project name is **OpenClaw**, with the description “Open - source personal AI assistant”.  \n\n### Connected Accounts:  \nThe visible connected account - related options are “Plugin”, “MCP (OAuth)”, and “MCP (API Key)”.  \n\n### Twitter Integration Status:  \nThe screenshot does not show any information about Twitter integration status.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1774940856,
+  "id": "20260331150726acb0bb259bde47d6",
+  "model": "glm-4.6v",
+  "object": "chat.completion",
+  "request_id": "20260331150726acb0bb259bde47d6",
+  "usage": {
+    "completion_tokens": 155,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 659,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    },
+    "total_tokens": 814
+  }
+}

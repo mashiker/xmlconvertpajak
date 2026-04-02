@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://apps.microsoft.com/detail/9nbrwqbwlb7k?hl=ko-KR&gl=KR",
+    "name": "Xml Editor - Windows에서 무료 다운로드 및 설치",
+    "snippet": "An XML Editor application with XML designer function is a software tool designed for creating, editing, and manipulating XML files. Missing: viewer UX",
+    "host_name": "apps.microsoft.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/dgis/xsddiagram",
+    "name": "dgis/xsddiagram: XSD Diagram is a free Xml Schema  - GitHub",
+    "snippet": "XSD Diagram is a free Xml Schema Definition (XSD) diagram viewer for Windows written in c# Framework.NET 2.0 - dgis/xsddiagram.",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.digitaltoolpad.com/tools/xsd-schema-viewer",
+    "name": "Free Powerful XML XSD Schema Viewer | Interactive Schema Explorer",
+    "snippet": "Explore XML Schema Definition (XSD) files with a fast type explorer, clickable navigation, tree view, and in-browser editing. Runs locally in your browser ...",
+    "host_name": "www.digitaltoolpad.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.liquid-technologies.com/xml-studio",
+    "name": "XML Editor, XSD Editor, Data Mapper, JSON and Web Services Toolkit",
+    "snippet": "Visualize and edit your XML data in a tree and tabular grid, and validate your XML document against an XML schema.Includes split graphical and text views, ... Missing: UX | Show results with: UX",
+    "host_name": "www.liquid-technologies.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://sourceforge.net/directory/xml-editors",
+    "name": "Best Open Source XML Editors 2026 - SourceForge",
+    "snippet": "Jaxe is a free Java XML editor with a configurable GUI, using XML schemas for validation and XSL for exports in HTML or XML.",
+    "host_name": "sourceforge.net",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.altova.com/manual/XMLSpy/spyenterprise/xseditingviews_schview.html",
+    "name": "Schema View - Altova XMLSpy 2026 Enterprise Edition",
+    "snippet": "XML Schemas can be viewed and edited graphically in Schema View (screenshot below). The graphical interface enables you to build schemas quickly and accurately.",
+    "host_name": "www.altova.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.xml.com/articles/2023/03/06/visualising-xml-schemas",
+    "name": "Visualizing XML Schemas",
+    "snippet": "Its graphical schema editor allows users to create and modify XML schemas visually, with automatic validation and error checking. The editor ...",
+    "host_name": "www.xml.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://marketplace.visualstudio.com/items?itemName=AnishMiyaAnsari.xml-tree-viewer",
+    "name": "XML Tree Viewer - Visual Studio Marketplace",
+    "snippet": "Extension for Visual Studio Code - Visualize XML and DTD files as interactive structures with parsed tree, JSON object, Mermaid diagram, split view, ... Missing: schema validation UX interface",
+    "host_name": "marketplace.visualstudio.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.w3.org/XML/Schema",
+    "name": "XML Schema - W3C",
+    "snippet": "xmlArchitect is an intuitive XML Schema editor, displaying a realtime treeview mockup of what the Instance XML Document should look like while editing the XML ...",
+    "host_name": "www.w3.org",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/39725695/viewing-the-xml-contents-as-tree-view-in-ea",
+    "name": "Viewing the xml contents as tree view in EA - Stack Overflow",
+    "snippet": "We are trying to read the xml file and converting the xml contents to EA class elements through addin. Java: visual xml editor and tree visualizer swing component I can ... Is there an XML schema extension for Visual Studio Code? More results from stackoverflow.com",
+    "host_name": "stackoverflow.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

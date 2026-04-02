@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://stackoverflow.com/questions/52772582/mapping-user-spreadsheet-columns-to-database-fields",
+    "name": "Mapping user spreadsheet columns to database fields",
+    "snippet": "The user would drag / drop items from the spreadsheet column list to the db field list . When a mapping has been completed by the user, you would ... Read more",
+    "host_name": "stackoverflow.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dribbble.com/search/column-mapping",
+    "name": "column mapping",
+    "snippet": "Explore thousands of high-quality column mapping images on Dribbble . Your resource to get inspired, discover and connect with designers worldwide.",
+    "host_name": "dribbble.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ux.stackexchange.com/questions/107618/mapping-of-column-fields-from-csv-file-with-currently-available-fields",
+    "name": "Mapping of column fields from CSV file with currently",
+    "snippet": "3 May 2017 — Prestashop has a similar functionality, where you can see your CSV file and match each column with an existing data. Read more",
+    "host_name": "ux.stackexchange.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.eleken.co/blog-posts/drag-and-drop-ui",
+    "name": "Drag and drop UI examples and UX tips [from SaaS products]",
+    "snippet": "25 Feb 2026 — Master drag and drop UI design with expert-backed tips, SaaS examples, tools, and visual best practices to streamline your product.",
+    "host_name": "www.eleken.co",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.pencilandpaper.io/articles/ux-pattern-analysis-enterprise-data-tables",
+    "name": "Data Table Design UX Patterns & Best Practices",
+    "snippet": "7 Feb 2023 — Learn about data table design UX . Best practices for column layout, table actions, and viewing options in your enterprise software.",
+    "host_name": "www.pencilandpaper.io",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://smart-interface-design-patterns.com/articles/bulk-ux",
+    "name": "How To Design Bulk Import UX (+ Figma Prototypes)",
+    "snippet": "Practical guidelines for designing better bulk operations , from file upload and column mapping to data repair and final import. The only limits for tomorrow ...",
+    "host_name": "smart-interface-design-patterns.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nngroup.com/articles/drag-drop",
+    "name": "Drag–and–Drop: How to Design for Ease of Use",
+    "snippet": "23 Feb 2020 — It is a type of direct manipulation, particularly useful for grouping, reordering, moving, or resizing objects. Read more",
+    "host_name": "www.nngroup.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.gingerbeardman.com/2025/10/11/how-to-tame-a-user-interface-using-a-spreadsheet",
+    "name": "How to tame a user interface using a spreadsheet ⌘I Get Info",
+    "snippet": "11 Oct 2025 — I'll be merging and moving cells at lightning speed—rationalising layouts, determining the optimal use of space, and creating order out of chaos ... Read more",
+    "host_name": "blog.gingerbeardman.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.uxstudioteam.com/ux-blog/drag-and-drop-interface",
+    "name": "The 7 Commandments Of Designing Drag And Drop",
+    "snippet": "12 Oct 2015 — In this article, I decided to gather the 7 key points when it comes to designing drag and drop interfaces . These are as follows: Read more",
+    "host_name": "www.uxstudioteam.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.justinmind.com/ui-design/data-table",
+    "name": "Designing effective data table UI – best practices and tips",
+    "snippet": "1 Apr 2025 — In this guide, we'll walk you through everything from table types and best practices to real-world challenges and tools like Material UI . Read more",
+    "host_name": "www.justinmind.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #FEFEFE; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+  background: #FEFEFE;
+}
+.header { background: #1284BA; padding: 18pt 40pt; }
+.header h2 { color: #FFFFFF; font-size: 22pt; margin: 0; }
+.grid { display: flex; flex-direction: row; margin: 18pt 40pt 0 40pt; flex: 1; }
+.col { flex: 1; margin-right: 14pt; }
+.col:last-child { margin-right: 0; }
+.skill-card {
+  background: #FFFFFF; border: 1.5pt solid #E0E8ED; border-radius: 8pt;
+  padding: 14pt 16pt; margin-bottom: 12pt;
+}
+.skill-card:last-child { margin-bottom: 0; }
+.badge {
+  background: #1284BA; padding: 2pt 8pt;
+  border-radius: 10pt; display: inline-block; margin-bottom: 6pt;
+}
+.badge.hot { background: #FF862F; }
+.badge p { color: #FFFFFF; font-size: 8pt; margin: 0; }
+.skill-card h4 { color: #1A1A1A; font-size: 12.5pt; margin: 0 0 5pt 0; }
+.skill-card p { color: #555555; font-size: 10pt; margin: 0; line-height: 1.45; }
+.install {
+  background: #F0F8FC; border-radius: 4pt; padding: 3pt 8pt; margin-top: 6pt;
+  display: inline-block;
+}
+.install p { color: #1284BA; font-family: Courier New, monospace; font-size: 8pt; margin: 0; }
+</style>
+</head>
+<body>
+<div class="header"><h2>Rekomendasi Skill: Produktivitas</h2></div>
+<div class="grid">
+  <div class="col">
+    <div class="skill-card">
+      <div class="badge hot"><p>WAJIB</p></div>
+      <h4>Web Search</h4>
+      <p>Riset regulasi pajak, putusan MA, atau berita perpajakan terbaru langsung dari AI assistant kamu.</p>
+      <div class="install"><p>openclaw skill install web-search</p></div>
+    </div>
+    <div class="skill-card">
+      <div class="badge"><p>RECOMMENDED</p></div>
+      <h4>PDF</h4>
+      <p>Ekstrak data dari PDF e-SPT, faktur pajak, dan dokumen DJP. Bisa merge dan split file PDF juga.</p>
+      <div class="install"><p>openclaw skill install pdf</p></div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="skill-card">
+      <div class="badge hot"><p>WAJIB</p></div>
+      <h4>Google Workspace (GOG)</h4>
+      <p>Otomasi Google Sheets, Docs, dan Gmail. Cocok buat bikin laporan pajak dan kirim ke klien via email.</p>
+      <div class="install"><p>openclaw skill install gog</p></div>
+    </div>
+    <div class="skill-card">
+      <div class="badge"><p>RECOMMENDED</p></div>
+      <h4>XLSX (Spreadsheet)</h4>
+      <p>Buat dan edit Excel dengan formula otomatis. Hitung PPh, PPN, dan pajak lainnya pakai AI.</p>
+      <div class="install"><p>openclaw skill install xlsx</p></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

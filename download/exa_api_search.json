@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://exa.ai/docs/changelog/exa-monitors-launch",
+    "name": "Introducing Exa Monitors",
+    "snippet": "Date: March 30, 2026 Monitors run Exa searches on a schedule and send results to a webhook. Each run deduplicates against previous runs, so you ...",
+    "host_name": "exa.ai",
+    "rank": 0,
+    "date": "Mar 30, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://exa.ai/docs/reference/search-api-guide",
+    "name": "Exa Search API",
+    "snippet": "It handles API key setup, SDK installation, and generates idiomatic code for the developer's specific language and framework. Building from raw docs risks ... Missing: 2025 | Show results with: 2025",
+    "host_name": "exa.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://exa.ai/docs/changelog/pricing-update",
+    "name": "Exa Pricing Update",
+    "snippet": "Date: March 3, 2026 We've made our pricing simpler and cheaper! Exa's search endpoint previously charged separately for search results and ...",
+    "host_name": "exa.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://websearchapi.ai/blog/exa-ai-alternatives",
+    "name": "Top Exa AI Alternatives: Best AI Web Search APIs in 2026",
+    "snippet": "The best Exa AI alternatives in 2026 are Vertex AI for enterprise ML workflows, Tavily for AI-optimized search, and WebSearchAPI.ai for ...",
+    "host_name": "websearchapi.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://exa.ai/docs/changelog/company-search-launch",
+    "name": "Introducing Exa Company Search",
+    "snippet": "Date: January 21, 2026 We've added significant improvements to company search due to a fine-tuned retrieval model and entity-matching pipeline ...",
+    "host_name": "exa.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  }
+]

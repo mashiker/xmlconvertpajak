@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://numerous.ai/blog/data-validation-best-practices",
+    "name": "The Best 10 Data Validation Best Practices in 2025",
+    "snippet": "Feb 19, 2025 — In this guide, we'll review the best data validation practices to help you get precise results and avoid errors and inconsistencies in your analysis.",
+    "host_name": "numerous.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/farizat-tabora_excel-data-validation-tips-to-ensure-clean-activity-7387495815373750272-S2MP",
+    "name": "How to Use Excel Data Validation for Clean Data Entry",
+    "snippet": "Before diving into reports or models, fixing data quality issues is the key to reliable insights. Here are some of the most common problems ...",
+    "host_name": "www.linkedin.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://getelyxai.com/en/blog/excel-data-validation-examples",
+    "name": "6 Excel Data Validation Examples You&#8217;ll",
+    "snippet": "Jul 1, 2025 — Discover 6 powerful Excel data validation examples to master data integrity. Learn step-by-step setups and see how Elyx.",
+    "host_name": "getelyxai.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.coursera.org/articles/google-sheets-data-validation",
+    "name": "How to Use Data Validation in Google Sheets",
+    "snippet": "Sep 16, 2025 — Troubleshooting common data validation issues . While validating data in Google Sheets , you might encounter certain issues or error messages.",
+    "host_name": "www.coursera.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://zinduaschool.com/mastering-data-quality-fundamentals-collection-best-practices-and-excel-data-validation-demo/?srsltid=AfmBOorHRs13wSBN6pAkTzNo7hcZvrmBBhAYB6W8Bz4axHND2yMRX_0F",
+    "name": "Mastering Data Quality: Fundamentals, Collection Best",
+    "snippet": "Feb 24, 2025 — In the Data Validation dialog box, click on the Error Alert tab. Step 4: Check the box that says Show error alert after invalid data is entered.",
+    "host_name": "zinduaschool.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.fanruan.com/en/blog/data-validation-in-excel",
+    "name": "How to Use Data Validation in Excel Effectively",
+    "snippet": "May 12, 2025 — Data validation in Excel helps you control the type of data entered into a cell, ensuring accuracy and consistency.",
+    "host_name": "www.fanruan.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.ovaledge.com/blog/data-quality-problems",
+    "name": "9 Common Data Quality Problems and How to Fix Them",
+    "snippet": "Nov 24, 2025 — Validation failures occur when data doesn't meet predefined business rules or criteria. This can lead to corrupted records or incorrect data ...",
+    "host_name": "www.ovaledge.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://data.org/guides/how-to-improve-data-quality-through-validation-and-quality-checks",
+    "name": "Guide: How to improve data quality through validation and",
+    "snippet": "Jul 12, 2024 — This guide will help understand data validation and cleaning processes, best practices, and their value in building confidence in and ...",
+    "host_name": "data.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/data-science/automated-detection-of-data-quality-issues-54a3cb283a91",
+    "name": "Data Quality Error Detection powered by LLMs",
+    "snippet": "This article is the second in a series about cleaning data using Large Language Models (LLMs), with a focus on identifying errors in tabular data sets.",
+    "host_name": "medium.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://endjin.com/blog/2020/11/how-do-i-know-if-my-data-solutions-are-accurate",
+    "name": "How do I know if my data solutions are accurate?",
+    "snippet": "Nov 2, 2020 — There's no simple answer, but this post attempts to highlight some of the key points - ultimately acknowledging that if you're doing anything serious with data,",
+    "host_name": "endjin.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

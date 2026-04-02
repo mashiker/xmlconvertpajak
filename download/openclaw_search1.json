@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://medium.com/@C.Dalrymple/using-openclaw-to-create-my-own-ai-agent-to-put-on-moltbook-1ed66341db1e",
+    "name": "Using OpenClaw to create my own AI agent to put on",
+    "snippet": "OpenClaw is an open source AI agent framework that integrates with LLMs like Claude and DeepSeek with functionality accessed through messaging ...",
+    "host_name": "medium.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://jsmastery.com/blogs/how-to-deploy-your-own-ai-agent-the-complete-openclaw-setup-guide",
+    "name": "How to Deploy Your Own AI Agent",
+    "snippet": "Create an account · Go to Settings → API Keys · Create a new key and copy it · Paste it into the Hostinger setup.",
+    "host_name": "jsmastery.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://every.to/source-code/openclaw-setting-up-your-first-personal-ai-agent",
+    "name": "OpenClaw: Setting Up Your First Personal AI Agent - Every",
+    "snippet": "Give the agent its ...",
+    "host_name": "every.to",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://generect.com/blog/openclaw-ai-agent",
+    "name": "What Is OpenClaw AI Agent? Full Guide for Outbound (2026)",
+    "snippet": "Mar 19, 2026 — Learn how to easily complete your OpenClaw AI Agent install with tips from my experience to make the setup smooth for your project.",
+    "host_name": "generect.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.freecodecamp.org/news/how-to-deploy-your-own-24x7-ai-agent-using-openclaw",
+    "name": "How to Deploy Your Own 24x7 AI Agent using OpenClaw",
+    "snippet": "Mar 16, 2026 — Deploying your own OpenClaw agent is ultimately about taking control of how your AI assistant works, where it runs, and how it fits into your ...",
+    "host_name": "www.freecodecamp.org",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/lightningdev123/how-to-set-up-a-personal-ai-agent-with-openclaw-and-discor-4omp",
+    "name": "How to Set Up a Personal AI Agent with OpenClaw and",
+    "snippet": "Feb 13, 2026 — This guide walks through the process of setting up OpenClaw on your own machine and connecting it to Discord. By the end, you will have an AI ...",
+    "host_name": "dev.to",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://mrprompts.substack.com/p/how-to-set-up-openclaw-your-247-ai",
+    "name": "How to Set Up OpenClaw: Your 24/7 AI Agent, Step by Step",
+    "snippet": "You've seen it everywhere. Here's how to actually get it running in under 30 minutes , on hardware you already own.",
+    "host_name": "mrprompts.substack.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/techfind777/openclaw-tutorial-build-your-first-ai-agent-in-30-minutes-6fl",
+    "name": "OpenClaw Tutorial: Build Your First AI Agent in 30 Minutes",
+    "snippet": "OpenClaw is an open-source AI agent framework that makes it surprisingly easy to build, configure, and deploy autonomous agents. If you've been curious about AI agents but intimidated by the complexity, this OpenClaw tutorial will get you from zero to a working agent in 30 minutes.",
+    "host_name": "dev.to",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.openclaw.ai/start/getting-started",
+    "name": "Getting Started - OpenClaw",
+    "snippet": "Install OpenClaw, run onboarding, and chat with your AI assistant — all in about 5 minutes. By the end you will have a running Gateway, configured auth, and a working chat session.",
+    "host_name": "docs.openclaw.ai",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://open-claw.org/docs/openclaw-setup",
+    "name": "OpenClaw Setup Guide - Step by Step Tutorial",
+    "snippet": "Learn how to set up OpenClaw AI assistant from subscription to configuration. Complete guide with screenshots.",
+    "host_name": "open-claw.org",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

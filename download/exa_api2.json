@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://exa-52.mintlify.app/reference/contents-api-guide-for-coding-agents",
+    "name": "Contents API Reference - Home - Exa",
+    "snippet": "Endpoint: POST https://api.exa.ai/contents Auth: Pass your API key via the x-api-key header. Get one at https://dashboard.exa.ai/api-keys The Contents API ...",
+    "host_name": "exa-52.mintlify.app",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.avalai.ir/en/models/exa_ai%3Fid%3Dwhen-to-use-exa-ai-search",
+    "name": "When to Use Exa AI Search - AvalAI مستندات",
+    "snippet": "Exa AI specializes in neural search technology, leveraging advanced AI models to understand query intent and provide semantically relevant results. Exa AI ...",
+    "host_name": "docs.avalai.ir",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.praison.ai/docs/js/tools/exa",
+    "name": "Exa Web Search - PraisonAI",
+    "snippet": "Exa is a powerful semantic web search API that provides intelligent search capabilities for AI agents. It supports neural search, content ... Missing: endpoint POST parameters",
+    "host_name": "docs.praison.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://agent-skills.md/skills/ejirocodes/agent-skills/exa-search",
+    "name": "Agent Skills: Exa Search Integration",
+    "snippet": "Exa.ai search API integration for neural and keyword web search with content retrieval. Use when implementing web search features, integrating Exa SDK ... Missing: endpoint POST query parameters",
+    "host_name": "agent-skills.md",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.avalai.ir/en/models/exa_ai",
+    "name": "Exa.AI - AvalAI مستندات",
+    "snippet": "Exa AI Search ; Endpoint, v1/search/exa_ai-search or v1/search ; Max results, 1-20 results per query ; Pricing, $0.025 per query ; Capabilities, Semantic search, ...",
+    "host_name": "docs.avalai.ir",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://docs.composio.dev/docs/changelog",
+    "name": "Changelog - Composio Docs",
+    "snippet": "The data object matches the response from GET /api/v3/connected_accounts/{id} , making it easy to process with existing code and SDK types.",
+    "host_name": "docs.composio.dev",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://composio.dev/blog/new-sdk-preview",
+    "name": "Our new SDK is in beta - Composio",
+    "snippet": "Composio has two core elements: our clients — which includes our SDKs, our API, and our managed cloud platform, where we execute user's tools.",
+    "host_name": "composio.dev",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.composio.dev/docs/migration-guide/new-sdk",
+    "name": "Our next generation SDKs - Composio Docs",
+    "snippet": "This guide covers migrating from the legacy SDK (v1) to the current SDK (v3). ... Current Endpoint. GET /api/v1/connectedAccounts, GET /api/v3/connected_accounts. Missing: 2025 | Show results with: 2025",
+    "host_name": "docs.composio.dev",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/ComposioHQ/composio/blob/next/python/README.md",
+    "name": "composio/python/README.md at next - GitHub",
+    "snippet": "The Composio Python SDK allows you to interact with the Composio Platform. It provides a powerful and flexible way to manage and execute ... Missing: 2025 | Show results with: 2025",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.composio.dev/reference/api-reference/connected-accounts",
+    "name": "Connected Accounts - Composio Docs",
+    "snippet": "Endpoints ; GET /api/v3/connected_accounts, List connected accounts with optional filters ; POST /api/v3/connected_accounts, Create a new connected account ; GET / ... Missing: tweets 2025",
+    "host_name": "docs.composio.dev",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://composio.dev/toolkits/twitter/framework/openclaw",
+    "name": "How to integrate Twitter MCP with OpenClaw - Composio",
+    "snippet": "1. Install OpenClaw Composio plugin. bash · 2. Copy the API Key from dashboard.composio. · 3. Setup OpenClaw Config openclaw ...",
+    "host_name": "composio.dev",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.composio.dev/reference",
+    "name": "API Reference - Composio Docs",
+    "snippet": "Composio powers tool discovery, execution, authentication, and context management for your AI agents with 1000+ toolkits. This reference covers our REST ... Missing: endpoint 2025",
+    "host_name": "docs.composio.dev",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://composio.dev/toolkits/twitter/framework/open-ai-agents-sdk",
+    "name": "How to integrate Twitter MCP with OpenAI Agents SDK - Composio",
+    "snippet": "This guide walks you through connecting Twitter to the OpenAI Agents SDK using the Composio tool router. By the end, you'll have a working Twitter agent ... Missing: v3 connected_accounts 2025",
+    "host_name": "composio.dev",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://composio.dev/toolkits/twitter/framework/langchain",
+    "name": "Twitter MCP Integration with LangChain - Composio",
+    "snippet": "Learn how to integrate Twitter with LangChain using the Model Context Protocol (MCP). Step-by-step guide with Python and TypeScript code examples. Missing: v3 connected_accounts 2025",
+    "host_name": "composio.dev",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://composio.dev/toolkits/twitter/framework/claude-code",
+    "name": "Twitter MCP Integration with Claude Code - Composio",
+    "snippet": "Learn how to integrate Twitter with Claude Code using the Model Context Protocol (MCP). Step-by-step guide with Python and TypeScript code examples. Missing: v3 connected_accounts 2025",
+    "host_name": "composio.dev",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

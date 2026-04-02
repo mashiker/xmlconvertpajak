@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://lollypop.design/blog/2026/january/wizard-ui-design",
+    "name": "Best Practices for High-Conversion Wizard UI Design & Examples",
+    "snippet": "Discover how Wizard UI breaks complex actions into simple steps, creating intuitive experiences that keep users moving forward.",
+    "host_name": "lollypop.design",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nngroup.com/articles/wizards",
+    "name": "Wizards: Definition and Design Recommendations - NN/G",
+    "snippet": "A wizard is a step-by-step process that allows users to input information in a prescribed order and in which subsequent steps may depend on information entered ...",
+    "host_name": "www.nngroup.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.eleken.co/blog-posts/wizard-ui-pattern-explained",
+    "name": "Wizard UI Pattern: When to Use It and How to Get It Right - Eleken",
+    "snippet": "A Wizard UI is a design pattern that breaks down complex processes into sequential, manageable steps, helping users move smoothly from start to finish.",
+    "host_name": "www.eleken.co",
+    "rank": 2,
+    "date": "Mar 25, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@amitchotia9/ux-methods-wizard-organizing-the-user-flow-4f565bbb5c93",
+    "name": "UX Methods “Wizard” — Organizing the User flow | by Amit Chotia",
+    "snippet": "The best way to control the user flow within a set of defined Logical chunks in a flow. It seems to be aligned for situations where the task is long.",
+    "host_name": "medium.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://stackoverflow.com/questions/2957216/ux-design-question-should-a-multi-step-wizard-save-the-form-contents-when-the-u",
+    "name": "UX Design Question: Should a multi step wizard save the form",
+    "snippet": "You should save the entered data, but you can get away by saving it volatilely (clientside or in memory - cookies or SESSION). Missing: workflow practices",
+    "host_name": "stackoverflow.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.growform.co/must-follow-ux-best-practices-when-designing-a-multi-step-form",
+    "name": "Must-Follow UX Best Practices When Designing A Multi Step Form",
+    "snippet": "Discover 10 must-follow UX best practices when creating multi-step forms. Elevate your forms and enjoy a dramatic increase in user engagement!",
+    "host_name": "www.growform.co",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.weweb.io/blog/multi-step-form-design",
+    "name": "Multi-Step Form Design - WeWeb",
+    "snippet": "When designing multi-step forms, follow these 6 best practices to ensure an optimal user experience and high conversion rates: ‍. 1. Clarity ...",
+    "host_name": "www.weweb.io",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7cHomlHEwQM",
+    "name": "Best Practices In Multi Step Form Design To 2x Your Leads - YouTube",
+    "snippet": "... best practice tips for multi step form UX, plus he's got the receipts and data to back it up. And if you're looking for a multi-step form ... Missing: import workflow",
+    "host_name": "www.youtube.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ui-patterns.com/patterns/Wizard",
+    "name": "Wizard design pattern - UI-Patterns.com",
+    "snippet": "The Wizard pattern is about parting dependable sub-tasks needed to perform a complex goal into separate steps. Missing: multi- | Show results with: multi-",
+    "host_name": "ui-patterns.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ux.stackexchange.com/questions/64473/the-effect-of-showing-wizard-style-steps-in-a-multistep-process",
+    "name": "The effect of showing \"wizard\" style steps in a multistep process",
+    "snippet": "Overall, if the process is long or complicated then try to be as transparent as possible which in principal could buy you some time and patience ...",
+    "host_name": "ux.stackexchange.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

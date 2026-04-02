@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #FEFEFE; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+  background: #FEFEFE;
+}
+.header { background: #1284BA; padding: 18pt 40pt; }
+.header h2 { color: #FFFFFF; font-size: 22pt; margin: 0; }
+.subtitle { color: #888888; font-size: 11pt; margin: 14pt 40pt 0 40pt; }
+.steps { display: flex; flex-direction: row; margin: 14pt 40pt 0 40pt; flex: 1; }
+.step {
+  flex: 1; margin-right: 14pt; background: #FFFFFF; border-radius: 8pt;
+  padding: 14pt 16pt; border: 1.5pt solid #E0E8ED;
+}
+.step:last-child { margin-right: 0; }
+.step-num {
+  background: #1284BA; color: #FFFFFF; font-size: 16pt; font-weight: bold;
+  width: 32pt; height: 32pt; border-radius: 50%; display: flex;
+  justify-content: center; align-items: center; margin-bottom: 8pt;
+}
+.step-num p { color: #FFFFFF; font-size: 16pt; margin: 0; }
+.step h4 { color: #1284BA; font-size: 12pt; margin: 0 0 6pt 0; }
+.step p { color: #444444; font-size: 10pt; margin: 0 0 4pt 0; line-height: 1.4; }
+.code {
+  background: #1E293B; color: #E2E8F0; font-family: Courier New, monospace;
+  font-size: 8.5pt; padding: 6pt 10pt; border-radius: 5pt; margin-top: 6pt;
+}
+.code p { color: #E2E8F0; font-size: 8.5pt; margin: 0; }
+</style>
+</head>
+<body>
+<div class="header"><h2>Setup OpenClaw: Langkah 1-3</h2></div>
+<p class="subtitle">Persiapan sampai OpenClaw pertama kali jalan</p>
+<div class="steps">
+  <div class="step">
+    <div class="step-num"><p>1</p></div>
+    <h4>Install Node.js</h4>
+    <p>Download Node.js versi LTS dari nodejs.org. Pilih versi 20.x atau lebih baru.</p>
+    <p>Pastikan npm sudah terpasang:</p>
+    <div class="code"><p>node --version</p><p>npm --version</p></div>
+  </div>
+  <div class="step">
+    <div class="step-num"><p>2</p></div>
+    <h4>Install OpenClaw</h4>
+    <p>Buka terminal, lalu jalankan perintah instalasi resmi:</p>
+    <div class="code"><p>curl -fsSL https://get.openclaw.ai | bash</p></div>
+    <p>Atau via npm:</p>
+    <div class="code"><p>npm install -g openclaw</p></div>
+  </div>
+  <div class="step">
+    <div class="step-num"><p>3</p></div>
+    <h4>Onboarding</h4>
+    <p>Jalankan perintah pertama kali:</p>
+    <div class="code"><p>openclaw</p></div>
+    <p>OpenClaw akan otomatis guide kamu setup API key (Claude/GPT) dan konfigurasi awal.</p>
+  </div>
+</div>
+</body>
+</html>
