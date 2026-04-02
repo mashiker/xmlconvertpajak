@@ -401,3 +401,114 @@ Task: Fix Suspense boundary for useSearchParams and XLSX require scope
 - Both fixes verified: production build passes with zero errors
 - Excel download API confirmed working (HTTP 200, 24KB file for BPMP template)
 - All routes verified: `/` (static), `/converters` (static), `/api/template/[id]/download` (dynamic)
+
+---
+## Task ID: redesign-clean-white-elegant
+Agent: frontend-styling-expert
+Task: Complete redesign from dark emerald glassmorphism to clean white elegant theme
+
+### Work Summary
+Redesigned all 12 files from dark glassmorphism theme (#0a0f0d bg, emerald glow, mesh gradients, dot grid) to a clean white elegant theme inspired by Stripe/Linear/Vercel aesthetics. Zero functionality changes — styling only.
+
+**Design Direction Applied:**
+- Background: Pure white (#ffffff) with subtle radial emerald gradient
+- Primary accent: Emerald (#059669 / #10b981) — subtle, professional
+- Text: slate-900 (headings), slate-500 (body), slate-400 (muted)
+- Cards: White bg, gray-200 border, soft shadow-sm
+- No glassmorphism — clean card design with subtle shadows
+- No animated mesh gradients — clean solid white
+- No dot grid patterns — removed
+- Buttons: Solid emerald for primary, white/gray border for secondary
+- Inputs: White bg, gray-200 border, emerald focus ring
+- Overall: Professional, trustworthy, minimal — suitable for tax/accounting
+
+**Files Updated (12 total):**
+
+1. **`src/app/globals.css`** — Complete theme overhaul:
+   - CSS variables: white bg (#ffffff), dark text (#0f172a), light borders (#e2e8f0)
+   - Removed: mesh-blob animations (3 keyframes), dot-grid-pattern, shadow-emerald-glow, shadow-amber-glow, pulseGlow
+   - Replaced .glass → white bg + gray border + subtle shadow
+   - Replaced .glass-input → white bg + gray border + emerald focus ring
+   - Replaced .glass-elevated → white bg + shadow-md
+   - Replaced .badge-glass → gray-50 bg + gray-200 border
+   - Replaced .btn-primary-gradient → solid emerald (#059669) with subtle shadow
+   - Replaced .btn-secondary-glass → white bg + gray-200 border
+   - Replaced .shadow-multi → soft light shadows
+   - Updated scrollbar to subtle gray
+   - Updated dark-table → light-table (f8fafc bg, gray-200 borders, emerald hover)
+   - Updated gradient-text to darker emerald shades (#059669, #0d9488)
+   - Kept: fadeSlideIn, fadeIn, shineSweep, float, card-hover-lift, progress-fill, stagger delays
+
+2. **`src/app/layout.tsx`** — Removed `className="dark"` from html tag, changed body to `bg-white text-slate-900`
+
+3. **`src/app/page.tsx`** — Full redesign:
+   - Background: clean white + subtle radial gradient (no mesh blobs, no dot grid)
+   - Header: white bg, gray-200 bottom border, clean logo (emerald gradient, white icon)
+   - Wizard sticky bar: white/80 backdrop-blur, gray-200 border
+   - Footer: gray-50 bg, gray-200 top border
+   - All text colors: slate-900 for headings, slate-500 for body, slate-600 for muted
+
+4. **`src/app/converters/page.tsx`** — Full redesign:
+   - Same clean background treatment
+   - Stats cards: white bg, colored borders, shadow-sm
+   - Search: glass-input (now white/gray), category tabs: emerald-50 active, white inactive
+   - Template cards: white bg, gray-200 border, shadow-sm → shadow-md on hover
+   - All color mappings updated (emerald-400→600, amber-400→600, etc.)
+
+5. **`src/components/converter/WizardSteps.tsx`** — Light step indicators:
+   - Active: emerald-50 bg, emerald-700 text, emerald-300 border
+   - Completed: emerald-100 bg, emerald-600 text
+   - Accessible: white bg, gray-200 border
+   - Disabled: gray-50 bg, gray-100 border
+   - Progress bar: gray-100 track, emerald gradient fill
+
+6. **`src/components/converter/TemplateSelector.tsx`** — Light template cards:
+   - Cards: white bg, gray-200 border, shadow-sm → shadow-md on hover
+   - Selected: emerald-600 bg icon
+   - TabsList: gray-50 bg, gray-200 border
+   - Active tab: emerald-50 bg, emerald-600 text
+
+7. **`src/components/converter/HeaderForm.tsx`** — Light form:
+   - Form container: white bg, gray-200 border, shadow-sm
+   - Labels: slate-500, Required markers: rose-500
+   - SelectContent: white bg, gray-200 border
+   - Badge: badge-glass (gray-50/gray-200)
+
+8. **`src/components/converter/LawanTransaksiForm.tsx`** — Light form:
+   - Same treatment as HeaderForm
+   - Icon: amber-50 bg, amber-200 border, amber-600 text
+
+9. **`src/components/converter/DataUpload.tsx`** — Light upload:
+   - Drop zone: gray-300 border, gray-50 bg → emerald-300/emerald-50 on drag
+   - Removed mesh gradient blobs inside drop zone
+   - Paste area: glass-input (white/gray)
+   - Preview: white bg, gray-200 border, shadow-sm
+   - Divider: gray-200
+
+10. **`src/components/converter/ColumnMapping.tsx`** — Light panels:
+    - Two-panel cards: white bg, gray-200 border, shadow-sm
+    - Panel headers: gray-100 bottom border
+    - Dividers: gray-100
+    - Confidence badges: emerald/amber/gray color scheme
+    - Manual mapping section: same treatment
+    - Preview badges: gray-100 bg
+
+11. **`src/components/converter/ValidationEditor.tsx`** — Light data grid:
+    - Stat cards: white with colored borders (rose-200, amber-200, emerald-200)
+    - Data table: white bg, dark-table styling (light header, gray hover)
+    - Error rows: rose-50 bg
+    - Error cells: rose-50 bg, rose-300 border
+    - Normal cells: white bg, gray-200 border
+    - Tooltip: white bg, gray-200 border, shadow-lg
+    - Header warnings: amber-50 bg, amber-200 border
+
+12. **`src/components/converter/ConvertDownload.tsx`** — Light convert page:
+    - Ready state: emerald-50 bg icon container
+    - Converting: same treatment
+    - Success badge: emerald-50 bg, emerald-200 border
+    - XML Preview: Kept dark theme (oneDark syntax highlighter) with code editor aesthetic
+      - Dark bg (#1e1e2e), gray-700 border
+      - Traffic light dots retained
+    - Action buttons: emerald primary, white/gray secondary
+
+**Build Verification:** ✅ `npx next build` passes with zero errors. All routes compile successfully.

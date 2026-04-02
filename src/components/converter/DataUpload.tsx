@@ -184,10 +184,10 @@ export function DataUpload() {
         <h2 className="text-3xl lg:text-4xl font-extrabold gradient-text">
           Upload Data
         </h2>
-        <p className="text-slate-400 text-sm">
+        <p className="text-slate-500 text-sm">
           Unggah file Excel/CSV atau tempel data dari spreadsheet
           {selectedTemplate && (
-            <span className="text-emerald-400 font-semibold"> — {selectedTemplate.code}</span>
+            <span className="text-emerald-600 font-semibold"> — {selectedTemplate.code}</span>
           )}
         </p>
       </div>
@@ -201,8 +201,8 @@ export function DataUpload() {
         className={`
           relative rounded-2xl border-2 border-dashed p-10 text-center transition-all duration-300 cursor-pointer overflow-hidden
           ${isDragging
-            ? 'border-emerald-400 bg-emerald-500/5 scale-[1.01] shadow-emerald-glow'
-            : 'border-white/[0.08] bg-white/[0.02] hover:border-emerald-500/30 hover:bg-white/[0.04]'
+            ? 'border-emerald-400 bg-emerald-50 scale-[1.01] shadow-md'
+            : 'border-gray-300 bg-gray-50/50 hover:border-emerald-300 hover:bg-emerald-50/50'
           }
         `}
       >
@@ -214,28 +214,22 @@ export function DataUpload() {
           className="hidden"
         />
 
-        {/* Mesh gradient blobs inside */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-20 -left-20 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl mesh-blob" />
-          <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-teal-500/10 rounded-full blur-3xl mesh-blob-2" />
-        </div>
-
         <div className="relative space-y-4">
           <motion.div
             animate={isDragging ? { y: -4, scale: 1.05 } : { y: 0, scale: 1 }}
             transition={{ duration: 0.2 }}
-            className="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center bg-gradient-to-br from-emerald-500/20 to-teal-500/10 border border-emerald-500/20"
+            className="w-16 h-16 rounded-2xl mx-auto flex items-center justify-center bg-emerald-50 border border-emerald-200"
           >
-            <Upload className="w-7 h-7 text-emerald-400" />
+            <Upload className="w-7 h-7 text-emerald-600" />
           </motion.div>
           <div>
-            <p className="font-semibold text-slate-200">
+            <p className="font-semibold text-slate-800">
               {isDragging ? 'Lepaskan file di sini...' : 'Seret & lepas file di sini'}
             </p>
             <p className="text-sm text-slate-500 mt-1">
-              atau <span className="text-emerald-400 font-medium cursor-pointer hover:underline">klik untuk memilih file</span>
+              atau <span className="text-emerald-600 font-medium cursor-pointer hover:underline">klik untuk memilih file</span>
             </p>
-            <p className="text-xs text-slate-600 mt-2">
+            <p className="text-xs text-slate-400 mt-2">
               Mendukung .xlsx, .xls, .csv — Maks 10MB
             </p>
           </div>
@@ -244,14 +238,14 @@ export function DataUpload() {
 
       {/* Divider */}
       <div className="flex items-center gap-4">
-        <div className="flex-1 h-px bg-white/[0.06]" />
-        <span className="text-xs text-slate-600 font-medium tracking-wider uppercase">atau tempel data</span>
-        <div className="flex-1 h-px bg-white/[0.06]" />
+        <div className="flex-1 h-px bg-gray-200" />
+        <span className="text-xs text-slate-400 font-medium tracking-wider uppercase">atau tempel data</span>
+        <div className="flex-1 h-px bg-gray-200" />
       </div>
 
       {/* Paste area */}
       <div className="space-y-2">
-        <label className="flex items-center gap-2 text-sm font-medium text-slate-400">
+        <label className="flex items-center gap-2 text-sm font-medium text-slate-600">
           <Clipboard className="w-4 h-4" />
           Tempel data dari Excel
         </label>
@@ -260,7 +254,7 @@ export function DataUpload() {
           className="min-h-[120px] font-mono text-xs glass-input rounded-xl"
           onChange={(e) => handlePaste(e.target.value)}
         />
-        <p className="text-xs text-slate-600">
+        <p className="text-xs text-slate-400">
           Data dipisahkan tab, koma, atau pipe. Baris pertama sebagai header kolom.
         </p>
       </div>
@@ -272,7 +266,7 @@ export function DataUpload() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="flex items-center gap-3 p-4 rounded-xl bg-rose-500/10 border border-rose-500/20 text-sm text-rose-400"
+            className="flex items-center gap-3 p-4 rounded-xl bg-rose-50 border border-rose-200 text-sm text-rose-600"
           >
             <AlertCircle className="w-4 h-4 flex-shrink-0" />
             {error}
@@ -283,14 +277,14 @@ export function DataUpload() {
       {/* Sheet Selector */}
       {sheetOptions.length > 1 && (
         <div className="flex items-center gap-3">
-          <label className="text-sm font-medium text-slate-400">Sheet:</label>
+          <label className="text-sm font-medium text-slate-600">Sheet:</label>
           <Select value={selectedSheet} onValueChange={handleSheetChange}>
             <SelectTrigger className="w-64 glass-input rounded-xl">
               <SelectValue placeholder="Pilih sheet" />
             </SelectTrigger>
-            <SelectContent className="bg-[#111a16] border-white/[0.1]">
+            <SelectContent className="bg-white border-gray-200">
               {sheetOptions.map((s) => (
-                <SelectItem key={s} value={s} className="text-slate-300 focus:bg-emerald-500/10 focus:text-emerald-300">
+                <SelectItem key={s} value={s} className="text-slate-700 focus:bg-emerald-50 focus:text-emerald-600">
                   {s}
                 </SelectItem>
               ))}
@@ -309,15 +303,15 @@ export function DataUpload() {
             className="space-y-4"
           >
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-              <span className="text-sm font-medium text-emerald-400">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+              <span className="text-sm font-medium text-emerald-600">
                 Data berhasil dibaca — {parsedData.rows.length} baris, {parsedData.headers.length} kolom
               </span>
             </div>
-            <div className="rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] overflow-hidden">
-              <div className="px-4 py-3 border-b border-white/[0.06] flex items-center gap-2">
-                <FileSpreadsheet className="w-4 h-4 text-emerald-400" />
-                <span className="text-sm font-medium text-slate-300">Preview Data (5 baris pertama)</span>
+            <div className="rounded-2xl bg-white border border-gray-200 overflow-hidden shadow-sm">
+              <div className="px-4 py-3 border-b border-gray-100 flex items-center gap-2">
+                <FileSpreadsheet className="w-4 h-4 text-emerald-600" />
+                <span className="text-sm font-medium text-slate-800">Preview Data (5 baris pertama)</span>
                 {parsedData.sheetName && (
                   <Badge variant="secondary" className="text-[10px] badge-glass ml-auto">
                     {parsedData.sheetName}
@@ -337,9 +331,9 @@ export function DataUpload() {
                   <TableBody>
                     {parsedData.rows.slice(0, 5).map((row, i) => (
                       <TableRow key={i}>
-                        <TableCell className="text-center text-xs text-slate-500 font-mono">{i + 1}</TableCell>
+                        <TableCell className="text-center text-xs text-slate-400 font-mono">{i + 1}</TableCell>
                         {parsedData.headers.map((h) => (
-                          <TableCell key={h} className="text-xs font-mono whitespace-nowrap max-w-[200px] truncate text-slate-400">
+                          <TableCell key={h} className="text-xs font-mono whitespace-nowrap max-w-[200px] truncate text-slate-600">
                             {row[h] || '-'}
                           </TableCell>
                         ))}
@@ -355,7 +349,7 @@ export function DataUpload() {
 
       {/* Navigation */}
       <div className="flex justify-between pt-2">
-        <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-400 hover:text-slate-200">
+        <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-600 hover:text-slate-900">
           <ArrowLeft className="w-4 h-4" />
           Kembali
         </Button>

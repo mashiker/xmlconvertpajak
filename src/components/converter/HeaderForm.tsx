@@ -49,21 +49,21 @@ export function HeaderForm() {
         <h2 className="text-3xl lg:text-4xl font-extrabold gradient-text">
           Isi Data Header
         </h2>
-        <p className="text-slate-400 text-sm">
-          Lengkapi informasi header untuk template <span className="text-emerald-400 font-semibold">{selectedTemplate.code} — {selectedTemplate.name}</span>
+        <p className="text-slate-500 text-sm">
+          Lengkapi informasi header untuk template <span className="text-emerald-600 font-semibold">{selectedTemplate.code} — {selectedTemplate.name}</span>
         </p>
       </div>
 
       {/* Progress indicator */}
       <div className="flex items-center justify-center gap-2">
         <Badge variant="secondary" className="badge-glass text-xs">
-          <FileText className="w-3 h-3 mr-1 text-emerald-400" />
+          <FileText className="w-3 h-3 mr-1 text-emerald-600" />
           {filledRequired}/{totalRequired} field wajib terisi
         </Badge>
       </div>
 
       {/* Form */}
-      <div className="rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] p-6 space-y-5">
+      <div className="rounded-2xl bg-white border border-gray-200 p-6 space-y-5 shadow-sm">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {fields.map((field) => (
             <FieldInput
@@ -84,7 +84,7 @@ export function HeaderForm() {
 
       {/* Navigation */}
       <div className="flex justify-between pt-2">
-        <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-400 hover:text-slate-200">
+        <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-600 hover:text-slate-900">
           <ArrowLeft className="w-4 h-4" />
           Kembali
         </Button>
@@ -114,9 +114,9 @@ function FieldInput({
 
   return (
     <div className={field.type === 'number' ? 'sm:col-span-1' : ''} >
-      <Label className="text-xs font-medium text-slate-400 mb-1.5 flex items-center gap-1.5">
+      <Label className="text-xs font-medium text-slate-500 mb-1.5 flex items-center gap-1.5">
         {field.label}
-        {field.required && <span className="text-rose-400">*</span>}
+        {field.required && <span className="text-rose-500">*</span>}
       </Label>
 
       {field.type === 'select' && field.options ? (
@@ -124,9 +124,9 @@ function FieldInput({
           <SelectTrigger className="glass-input h-10 rounded-xl text-sm">
             <SelectValue placeholder={`Pilih ${field.label}...`} />
           </SelectTrigger>
-          <SelectContent className="bg-[#111a16] border-white/[0.1]">
+          <SelectContent className="bg-white border-gray-200">
             {field.options.map((opt) => (
-              <SelectItem key={opt.value} value={opt.value} className="text-slate-300 focus:bg-emerald-500/10 focus:text-emerald-300">
+              <SelectItem key={opt.value} value={opt.value} className="text-slate-700 focus:bg-emerald-50 focus:text-emerald-600">
                 {opt.label}
               </SelectItem>
             ))}
@@ -146,7 +146,7 @@ function FieldInput({
       )}
 
       {field.description && field.type !== 'npwp' && (
-        <p className="text-[10px] text-slate-600 mt-1">{field.description}</p>
+        <p className="text-[10px] text-slate-400 mt-1">{field.description}</p>
       )}
     </div>
   );

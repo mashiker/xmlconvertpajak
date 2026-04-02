@@ -42,13 +42,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className="dark">
+    <html lang="id">
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo.png" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0f0d] text-[#f0fdf4]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900`}
       >
         {children}
         <Toaster />

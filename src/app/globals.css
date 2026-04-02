@@ -45,37 +45,37 @@
 
 :root {
   --radius: 0.625rem;
-  /* Emerald Finance — Dark Theme */
-  --background: #0a0f0d;
-  --foreground: #f0fdf4;
-  --card: #111a16;
-  --card-foreground: #f0fdf4;
-  --popover: #111a16;
-  --popover-foreground: #f0fdf4;
+  /* Clean White Elegant Theme */
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
   --primary: #10b981;
-  --primary-foreground: #0a0f0d;
-  --secondary: #1a2b23;
-  --secondary-foreground: #f0fdf4;
-  --muted: #1a2b23;
-  --muted-foreground: #94a3b8;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
   --accent: #f59e0b;
-  --accent-foreground: #0a0f0d;
-  --destructive: #f43f5e;
-  --border: rgba(255,255,255,0.12);
-  --input: rgba(255,255,255,0.12);
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
   --ring: #10b981;
   --chart-1: #10b981;
   --chart-2: #f59e0b;
   --chart-3: #14b8a6;
   --chart-4: #4ade80;
   --chart-5: #a78bfa;
-  --sidebar: #111a16;
-  --sidebar-foreground: #f0fdf4;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0f172a;
   --sidebar-primary: #10b981;
-  --sidebar-primary-foreground: #0a0f0d;
-  --sidebar-accent: #1a2b23;
-  --sidebar-accent-foreground: #f0fdf4;
-  --sidebar-border: rgba(255,255,255,0.12);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #0f172a;
+  --sidebar-border: #e2e8f0;
   --sidebar-ring: #10b981;
 }
 
@@ -99,111 +99,42 @@
   background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(16,185,129,0.3);
+  background: #cbd5e1;
   border-radius: 3px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgba(16,185,129,0.5);
+  background: #94a3b8;
 }
 
 /* ============================================================
-   ANIMATED MESH GRADIENT BACKGROUND
-   ============================================================ */
-@keyframes meshGradient {
-  0%, 100% {
-    transform: translate(0%, 0%) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translate(10%, -15%) rotate(90deg) scale(1.1);
-  }
-  50% {
-    transform: translate(-5%, 10%) rotate(180deg) scale(0.95);
-  }
-  75% {
-    transform: translate(-15%, -5%) rotate(270deg) scale(1.05);
-  }
-}
-
-@keyframes meshGradient2 {
-  0%, 100% {
-    transform: translate(0%, 0%) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translate(-15%, 10%) rotate(-90deg) scale(1.05);
-  }
-  50% {
-    transform: translate(10%, -10%) rotate(-180deg) scale(1.1);
-  }
-  75% {
-    transform: translate(5%, 15%) rotate(-270deg) scale(0.95);
-  }
-}
-
-@keyframes meshGradient3 {
-  0%, 100% {
-    transform: translate(0%, 0%) scale(1);
-  }
-  33% {
-    transform: translate(20%, -10%) scale(1.15);
-  }
-  66% {
-    transform: translate(-10%, 20%) scale(0.9);
-  }
-}
-
-.mesh-blob {
-  animation: meshGradient 20s ease-in-out infinite;
-}
-
-.mesh-blob-2 {
-  animation: meshGradient2 25s ease-in-out infinite;
-}
-
-.mesh-blob-3 {
-  animation: meshGradient3 30s ease-in-out infinite;
-}
-
-/* ============================================================
-   DOT GRID PATTERN OVERLAY
-   ============================================================ */
-.dot-grid-pattern {
-  background-image: radial-gradient(circle, rgba(16,185,129,0.07) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-/* ============================================================
-   GLASSMORPHISM UTILITIES
+   CLEAN CARD UTILITIES (replaces glassmorphism)
    ============================================================ */
 .glass {
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .glass-elevated {
-  background: rgba(255,255,255,0.09);
-  backdrop-filter: blur(32px);
-  -webkit-backdrop-filter: blur(32px);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.03);
 }
 
 .glass-input {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #f0fdf4;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
   transition: all 0.2s ease;
 }
 .glass-input:focus {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(16,185,129,0.5);
-  box-shadow: 0 0 0 3px rgba(16,185,129,0.15), 0 0 20px rgba(16,185,129,0.1);
+  background: #ffffff;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16,185,129,0.1);
   outline: none;
 }
 .glass-input::placeholder {
-  color: rgba(148,163,184,0.6);
+  color: #94a3b8;
 }
 
 /* ============================================================
@@ -211,34 +142,20 @@
    ============================================================ */
 .shadow-multi {
   box-shadow:
-    0 1px 2px rgba(0,0,0,0.3),
-    0 4px 8px rgba(0,0,0,0.2),
-    0 8px 16px rgba(0,0,0,0.15),
-    0 16px 32px rgba(0,0,0,0.1);
+    0 1px 3px rgba(0,0,0,0.04),
+    0 4px 6px rgba(0,0,0,0.04),
+    0 10px 15px rgba(0,0,0,0.04),
+    0 20px 25px rgba(0,0,0,0.04);
 }
 
 .shadow-multi-sm {
   box-shadow:
-    0 1px 2px rgba(0,0,0,0.25),
-    0 2px 4px rgba(0,0,0,0.15),
-    0 4px 8px rgba(0,0,0,0.1);
-}
-
-.shadow-emerald-glow {
-  box-shadow:
-    0 0 10px rgba(16,185,129,0.15),
-    0 0 20px rgba(16,185,129,0.1),
-    0 0 40px rgba(16,185,129,0.05);
-}
-
-.shadow-amber-glow {
-  box-shadow:
-    0 0 10px rgba(245,158,11,0.15),
-    0 0 20px rgba(245,158,11,0.1);
+    0 1px 2px rgba(0,0,0,0.04),
+    0 2px 4px rgba(0,0,0,0.03);
 }
 
 /* ============================================================
-   GRADIENT BORDER
+   GRADIENT BORDER (subtle for light theme)
    ============================================================ */
 .gradient-border {
   position: relative;
@@ -250,7 +167,7 @@
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(16,185,129,0.5), rgba(20,184,166,0.3), rgba(245,158,11,0.3));
+  background: linear-gradient(135deg, rgba(16,185,129,0.3), rgba(20,184,166,0.2), rgba(245,158,11,0.2));
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -266,7 +183,7 @@
    GRADIENT TEXT
    ============================================================ */
 .gradient-text {
-  background: linear-gradient(135deg, #34d399, #14b8a6, #34d399);
+  background: linear-gradient(135deg, #059669, #0d9488, #059669);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -333,22 +250,6 @@
 }
 
 /* ============================================================
-   PULSE GLOW
-   ============================================================ */
-@keyframes pulseGlow {
-  0%, 100% {
-    box-shadow: 0 0 5px rgba(16,185,129,0.2), 0 0 10px rgba(16,185,129,0.1);
-  }
-  50% {
-    box-shadow: 0 0 15px rgba(16,185,129,0.4), 0 0 30px rgba(16,185,129,0.2), 0 0 45px rgba(16,185,129,0.1);
-  }
-}
-
-.animate-pulse-glow {
-  animation: pulseGlow 2s ease-in-out infinite;
-}
-
-/* ============================================================
    FLOAT ANIMATION
    ============================================================ */
 @keyframes float {
@@ -368,13 +269,14 @@
 }
 .card-hover-lift:hover {
   transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
 }
 
 /* ============================================================
    XML SYNTAX HIGHLIGHT OVERRIDES
    ============================================================ */
 .xml-highlight pre {
-  background: #0a0f0d !important;
+  background: #f8fafc !important;
   border-radius: 0.75rem;
   padding: 1rem;
   font-size: 0.8rem;
@@ -394,13 +296,11 @@
 }
 
 /* ============================================================
-   GLASS BADGE
+   CLEAN BADGE (replaces badge-glass)
    ============================================================ */
 .badge-glass {
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
 }
 
 /* ============================================================
@@ -418,34 +318,32 @@
 .stagger-10 { animation-delay: 0.5s; }
 
 /* ============================================================
-   SHADCN UI OVERRIDES FOR DARK EMERALD THEME
+   BUTTON STYLES FOR CLEAN WHITE THEME
    ============================================================ */
 
 /* Button overrides */
 .btn-primary-gradient {
-  background: linear-gradient(135deg, #10b981, #059669);
+  background: #059669;
   color: white;
   font-weight: 600;
-  box-shadow: 0 0 20px rgba(16,185,129,0.3), 0 4px 12px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
 }
 .btn-primary-gradient:hover {
-  background: linear-gradient(135deg, #34d399, #10b981);
-  box-shadow: 0 0 30px rgba(16,185,129,0.4), 0 4px 16px rgba(0,0,0,0.3);
+  background: #047857;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
   transform: translateY(-1px);
 }
 
 .btn-secondary-glass {
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.12);
-  color: #f0fdf4;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #334155;
   transition: all 0.2s ease;
 }
 .btn-secondary-glass:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.2);
+  background: #f8fafc;
+  border-color: #cbd5e1;
 }
 
 /* Traffic light dots for XML preview */
@@ -458,23 +356,23 @@
   height: 10px;
   border-radius: 50%;
 }
-.traffic-light .red { background: #f43f5e; }
+.traffic-light .red { background: #ef4444; }
 .traffic-light .yellow { background: #f59e0b; }
-.traffic-light .green { background: #4ade80; }
+.traffic-light .green { background: #22c55e; }
 
-/* Dark table */
+/* Light table */
 .dark-table th {
-  background: rgba(26,43,35,0.8);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  color: #94a3b8;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  color: #64748b;
   font-weight: 600;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .dark-table tr {
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid #f1f5f9;
 }
 .dark-table tbody tr:hover {
-  background: rgba(16,185,129,0.05);
+  background: #f0fdf4;
 }

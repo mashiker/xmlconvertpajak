@@ -120,7 +120,7 @@ export function ValidationEditor() {
       {/* Header */}
       <div className="text-center space-y-3">
         <h2 className="text-3xl lg:text-4xl font-extrabold gradient-text">Validasi & Edit</h2>
-        <p className="text-slate-400 text-sm">
+        <p className="text-slate-500 text-sm">
           Periksa dan perbaiki data sebelum konversi ke XML
         </p>
       </div>
@@ -129,32 +129,32 @@ export function ValidationEditor() {
       <div className="flex items-center justify-center gap-4 flex-wrap">
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="rounded-xl px-5 py-3 border-2 border-rose-500/20 bg-rose-500/5 flex items-center gap-3"
+          className="rounded-xl px-5 py-3 border-2 border-rose-200 bg-rose-50 flex items-center gap-3"
         >
-          <XCircle className="w-6 h-6 text-rose-400" />
+          <XCircle className="w-6 h-6 text-rose-500" />
           <div>
-            <p className="text-xl font-bold text-rose-400">{errorCount}</p>
-            <p className="text-[10px] text-rose-400/60 uppercase tracking-wider">Error</p>
+            <p className="text-xl font-bold text-rose-600">{errorCount}</p>
+            <p className="text-[10px] text-rose-400 uppercase tracking-wider">Error</p>
           </div>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="rounded-xl px-5 py-3 border-2 border-amber-500/20 bg-amber-500/5 flex items-center gap-3"
+          className="rounded-xl px-5 py-3 border-2 border-amber-200 bg-amber-50 flex items-center gap-3"
         >
-          <AlertTriangle className="w-6 h-6 text-amber-400" />
+          <AlertTriangle className="w-6 h-6 text-amber-500" />
           <div>
-            <p className="text-xl font-bold text-amber-400">{warningCount}</p>
-            <p className="text-[10px] text-amber-400/60 uppercase tracking-wider">Peringatan</p>
+            <p className="text-xl font-bold text-amber-600">{warningCount}</p>
+            <p className="text-[10px] text-amber-400 uppercase tracking-wider">Peringatan</p>
           </div>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="rounded-xl px-5 py-3 border-2 border-emerald-500/20 bg-emerald-500/5 flex items-center gap-3"
+          className="rounded-xl px-5 py-3 border-2 border-emerald-200 bg-emerald-50 flex items-center gap-3"
         >
-          <CheckCircle2 className="w-6 h-6 text-emerald-400" />
+          <CheckCircle2 className="w-6 h-6 text-emerald-500" />
           <div>
-            <p className="text-xl font-bold text-emerald-400">{validCount}</p>
-            <p className="text-[10px] text-emerald-400/60 uppercase tracking-wider">Valid</p>
+            <p className="text-xl font-bold text-emerald-600">{validCount}</p>
+            <p className="text-[10px] text-emerald-400 uppercase tracking-wider">Valid</p>
           </div>
         </motion.div>
       </div>
@@ -168,12 +168,12 @@ export function ValidationEditor() {
             onCheckedChange={setShowOnlyErrors}
             className="data-[state=checked]:bg-emerald-500"
           />
-          <Label htmlFor="error-filter" className="text-sm flex items-center gap-1.5 cursor-pointer text-slate-400">
+          <Label htmlFor="error-filter" className="text-sm flex items-center gap-1.5 cursor-pointer text-slate-600">
             <Filter className="w-3.5 h-3.5" />
             Tampilkan hanya error
           </Label>
         </div>
-        <Button variant="ghost" size="sm" onClick={runValidation} className="gap-1.5 text-slate-400 hover:text-emerald-400">
+        <Button variant="ghost" size="sm" onClick={runValidation} className="gap-1.5 text-slate-600 hover:text-emerald-600">
           <AlertCircle className="w-3.5 h-3.5" />
           Validasi Ulang
         </Button>
@@ -181,7 +181,7 @@ export function ValidationEditor() {
 
       {/* Data Grid */}
       <TooltipProvider delayDuration={200}>
-        <div className="rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] overflow-hidden">
+        <div className="rounded-2xl bg-white border border-gray-200 overflow-hidden shadow-sm">
           <ScrollArea className="max-h-[500px]">
             <Table className="dark-table">
               <TableHeader>
@@ -192,10 +192,10 @@ export function ValidationEditor() {
                     return (
                       <TableHead key={m.sourceColumn} className="min-w-[140px]">
                         <div className="flex items-center gap-1">
-                          {field?.required && <span className="text-rose-400">*</span>}
+                          {field?.required && <span className="text-rose-500">*</span>}
                           {field?.label || m.sourceColumn}
                         </div>
-                        <div className="text-[10px] text-slate-600 font-normal normal-case mt-0.5">{m.sourceColumn}</div>
+                        <div className="text-[10px] text-slate-400 font-normal normal-case mt-0.5">{m.sourceColumn}</div>
                       </TableHead>
                     );
                   })}
@@ -209,8 +209,8 @@ export function ValidationEditor() {
                   const hasRowWarning = rowErrors.some((e) => e.severity === 'warning');
 
                   return (
-                    <TableRow key={index} className={hasRowError ? 'bg-rose-500/[0.03]' : ''}>
-                      <TableCell className="text-center text-xs text-slate-500 font-mono">
+                    <TableRow key={index} className={hasRowError ? 'bg-rose-50' : ''}>
+                      <TableCell className="text-center text-xs text-slate-400 font-mono">
                         {index + 1}
                       </TableCell>
                       {mappedColumns.map((m) => {
@@ -227,14 +227,14 @@ export function ValidationEditor() {
                                     <Input
                                       defaultValue={row[m.sourceColumn] || ''}
                                       onChange={(e) => handleCellEdit(index, m.sourceColumn, e.target.value)}
-                                      className="h-7 text-xs font-mono bg-rose-500/[0.06] border-rose-500/30 text-slate-300 focus:bg-rose-500/[0.1] rounded-lg"
+                                      className="h-7 text-xs font-mono bg-rose-50 border-rose-300 text-slate-700 focus:bg-rose-50 rounded-lg"
                                     />
                                   </div>
                                 </TooltipTrigger>
-                                <TooltipContent side="bottom" className="bg-[#1a2b23] border-white/[0.1] max-w-xs">
+                                <TooltipContent side="bottom" className="bg-white border-gray-200 shadow-lg max-w-xs">
                                   <div className="space-y-1">
                                     {cellErrors.map((ce, ci) => (
-                                      <p key={ci} className="text-xs text-rose-300">{ce.message}</p>
+                                      <p key={ci} className="text-xs text-rose-600">{ce.message}</p>
                                     ))}
                                   </div>
                                 </TooltipContent>
@@ -243,7 +243,7 @@ export function ValidationEditor() {
                               <Input
                                 defaultValue={row[m.sourceColumn] || ''}
                                 onChange={(e) => handleCellEdit(index, m.sourceColumn, e.target.value)}
-                                className="h-7 text-xs font-mono bg-white/[0.02] border-white/[0.06] text-slate-400 focus:border-emerald-500/30 rounded-lg"
+                                className="h-7 text-xs font-mono bg-white border-gray-200 text-slate-600 focus:border-emerald-500 rounded-lg"
                               />
                             )}
                           </TableCell>
@@ -251,11 +251,11 @@ export function ValidationEditor() {
                       })}
                       <TableCell className="p-1.5 text-center">
                         {hasRowError ? (
-                          <XCircle className="w-4 h-4 text-rose-400 mx-auto" />
+                          <XCircle className="w-4 h-4 text-rose-500 mx-auto" />
                         ) : hasRowWarning ? (
-                          <AlertTriangle className="w-4 h-4 text-amber-400 mx-auto" />
+                          <AlertTriangle className="w-4 h-4 text-amber-500 mx-auto" />
                         ) : (
-                          <CheckCircle2 className="w-4 h-4 text-emerald-400 mx-auto" />
+                          <CheckCircle2 className="w-4 h-4 text-emerald-500 mx-auto" />
                         )}
                       </TableCell>
                     </TableRow>
@@ -272,13 +272,13 @@ export function ValidationEditor() {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="rounded-xl bg-amber-500/5 border border-amber-500/20 p-4"
+          className="rounded-xl bg-amber-50 border border-amber-200 p-4"
         >
           <div className="flex items-center gap-2 mb-2">
-            <AlertTriangle className="w-4 h-4 text-amber-400" />
-            <span className="text-sm font-medium text-amber-400">Peringatan Header</span>
+            <AlertTriangle className="w-4 h-4 text-amber-600" />
+            <span className="text-sm font-medium text-amber-600">Peringatan Header</span>
           </div>
-          <ul className="text-xs text-amber-400/80 space-y-1">
+          <ul className="text-xs text-amber-600/80 space-y-1">
             {validationErrors
               .filter((e) => e.row < 0)
               .map((e, i) => (
@@ -290,7 +290,7 @@ export function ValidationEditor() {
 
       {/* Navigation */}
       <div className="flex justify-between pt-2">
-        <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-400 hover:text-slate-200">
+        <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-600 hover:text-slate-900">
           <ArrowLeft className="w-4 h-4" />
           Kembali
         </Button>

@@ -91,7 +91,7 @@ export function ConvertDownload() {
       {/* Header */}
       <div className="text-center space-y-3">
         <h2 className="text-3xl lg:text-4xl font-extrabold gradient-text">Konversi & Unduh</h2>
-        <p className="text-slate-400 text-sm">
+        <p className="text-slate-500 text-sm">
           Konversi data ke XML format DJP Coretax
         </p>
       </div>
@@ -108,11 +108,11 @@ export function ConvertDownload() {
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-              className="w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-teal-500/10 border border-emerald-500/20 mx-auto flex items-center justify-center mb-6"
+              className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-200 mx-auto flex items-center justify-center mb-6"
             >
-              <Sparkles className="w-10 h-10 text-emerald-400" />
+              <Sparkles className="w-10 h-10 text-emerald-600" />
             </motion.div>
-            <h3 className="text-xl font-semibold text-slate-200 mb-2">Siap Konversi?</h3>
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">Siap Konversi?</h3>
             <p className="text-sm text-slate-500 mb-8 max-w-md mx-auto">
               Data Anda akan dikonversi ke format XML {selectedTemplate?.code} yang sesuai dengan spesifikasi DJP Coretax
             </p>
@@ -135,10 +135,10 @@ export function ConvertDownload() {
             exit={{ opacity: 0 }}
             className="text-center py-16"
           >
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-teal-500/10 border border-emerald-500/20 mx-auto flex items-center justify-center mb-6 animate-pulse">
-              <RefreshCw className="w-10 h-10 text-emerald-400 animate-spin" />
+            <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-200 mx-auto flex items-center justify-center mb-6 animate-pulse">
+              <RefreshCw className="w-10 h-10 text-emerald-600 animate-spin" />
             </div>
-            <p className="text-lg font-semibold text-slate-200">Mengkonversi data...</p>
+            <p className="text-lg font-semibold text-slate-800">Mengkonversi data...</p>
             <p className="text-sm text-slate-500 mt-1">Mohon tunggu sebentar</p>
           </motion.div>
         )}
@@ -158,7 +158,7 @@ export function ConvertDownload() {
                 animate={{ scale: 1 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
               >
-                <Badge className="bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-5 py-1.5 text-sm gap-1.5">
+                <Badge className="bg-emerald-50 text-emerald-600 border border-emerald-200 px-5 py-1.5 text-sm gap-1.5">
                   <Check className="w-4 h-4" />
                   XML Berhasil Dibuat
                 </Badge>
@@ -174,7 +174,7 @@ export function ConvertDownload() {
                   transition={{ duration: 2 }}
                   className="pointer-events-none fixed inset-0 flex items-center justify-center z-50"
                 >
-                  <PartyPopper className="w-16 h-16 text-emerald-400 animate-float" />
+                  <PartyPopper className="w-16 h-16 text-emerald-500 animate-float" />
                 </motion.div>
               )}
             </AnimatePresence>
@@ -198,7 +198,7 @@ export function ConvertDownload() {
               >
                 {copied ? (
                   <>
-                    <Check className="w-4 h-4 text-emerald-400" />
+                    <Check className="w-4 h-4 text-emerald-600" />
                     Tersalin!
                   </>
                 ) : (
@@ -212,11 +212,11 @@ export function ConvertDownload() {
 
             {/* Restart */}
             <div className="flex items-center justify-center gap-4 pt-4">
-              <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-500 hover:text-slate-300">
+              <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-500 hover:text-slate-700">
                 <ArrowLeft className="w-4 h-4" />
                 Kembali
               </Button>
-              <Button variant="ghost" onClick={resetWizard} className="gap-2 text-slate-500 hover:text-emerald-400">
+              <Button variant="ghost" onClick={resetWizard} className="gap-2 text-slate-500 hover:text-emerald-600">
                 <RefreshCw className="w-4 h-4" />
                 Konversi Lagi
               </Button>
@@ -238,10 +238,10 @@ function XmlPreview({ xml }: { xml: string }) {
     <motion.div
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
-      className="rounded-2xl bg-[#0a0f0d] border border-white/[0.08] overflow-hidden shadow-multi"
+      className="rounded-2xl bg-[#1e1e2e] border border-gray-700 overflow-hidden shadow-multi"
     >
       {/* Code editor header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-white/[0.06] bg-[#111a16]/80">
+      <div className="flex items-center justify-between px-4 py-3 border-b border-gray-700 bg-[#2a2a3e]">
         <div className="flex items-center gap-3">
           {/* Traffic light dots */}
           <div className="traffic-light">
@@ -252,14 +252,14 @@ function XmlPreview({ xml }: { xml: string }) {
           <div className="flex items-center gap-2">
             <FileCode className="w-4 h-4 text-emerald-400" />
             <span className="text-sm font-medium text-slate-300">Preview XML</span>
-            <Badge variant="secondary" className="text-[10px] badge-glass">
+            <Badge variant="secondary" className="text-[10px] bg-gray-700 text-slate-400 border-0">
               {lineCount} baris
             </Badge>
           </div>
         </div>
         <button
           onClick={() => setExpanded(!expanded)}
-          className="text-slate-500 hover:text-slate-300 transition-colors p-1 rounded-lg hover:bg-white/[0.05]"
+          className="text-slate-400 hover:text-slate-200 transition-colors p-1 rounded-lg hover:bg-gray-600"
         >
           {expanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
         </button>

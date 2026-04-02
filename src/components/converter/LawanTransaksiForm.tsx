@@ -45,14 +45,14 @@ export function LawanTransaksiForm() {
       {/* Header */}
       <div className="text-center space-y-3">
         <div className="flex items-center justify-center gap-3 mb-2">
-          <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
-            <Users className="w-5 h-5 text-amber-400" />
+          <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center">
+            <Users className="w-5 h-5 text-amber-600" />
           </div>
         </div>
         <h2 className="text-3xl lg:text-4xl font-extrabold gradient-text">
           Lawan Transaksi
         </h2>
-        <p className="text-slate-400 text-sm">
+        <p className="text-slate-500 text-sm">
           Masukkan data pembeli / penerima barang/jasa untuk faktur pajak
         </p>
       </div>
@@ -60,19 +60,19 @@ export function LawanTransaksiForm() {
       {/* Progress */}
       <div className="flex items-center justify-center gap-2">
         <Badge variant="secondary" className="badge-glass text-xs">
-          <Users className="w-3 h-3 mr-1 text-amber-400" />
+          <Users className="w-3 h-3 mr-1 text-amber-600" />
           {filledRequired}/{totalRequired} field wajib terisi
         </Badge>
       </div>
 
       {/* Form */}
-      <div className="rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] p-6 space-y-5">
+      <div className="rounded-2xl bg-white border border-gray-200 p-6 space-y-5 shadow-sm">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {fields.map((field) => (
             <div key={field.name} className={field.name.includes('Alamat') ? 'sm:col-span-2' : ''}>
-              <Label className="text-xs font-medium text-slate-400 mb-1.5 flex items-center gap-1.5">
+              <Label className="text-xs font-medium text-slate-500 mb-1.5 flex items-center gap-1.5">
                 {field.label}
-                {field.required && <span className="text-rose-400">*</span>}
+                {field.required && <span className="text-rose-500">*</span>}
               </Label>
 
               {field.name.includes('Alamat') ? (
@@ -103,7 +103,7 @@ export function LawanTransaksiForm() {
 
       {/* Navigation */}
       <div className="flex justify-between pt-2">
-        <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-400 hover:text-slate-200">
+        <Button variant="ghost" onClick={prevStep} className="gap-2 text-slate-600 hover:text-slate-900">
           <ArrowLeft className="w-4 h-4" />
           Kembali
         </Button>

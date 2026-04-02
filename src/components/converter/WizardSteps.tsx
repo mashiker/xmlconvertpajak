@@ -21,9 +21,9 @@ export function WizardSteps() {
   return (
     <div className="w-full">
       {/* Progress bar */}
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-white/[0.04]">
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gray-100">
         <motion.div
-          className="h-full bg-gradient-to-r from-emerald-500 via-teal-400 to-emerald-400"
+          className="h-full bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-400"
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
@@ -46,25 +46,25 @@ export function WizardSteps() {
                 className={cn(
                   'relative flex items-center gap-1.5 sm:gap-2 rounded-full px-3 sm:px-4 lg:px-5 py-2 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap',
                   // Active
-                  isActive && 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-[0_0_20px_rgba(16,185,129,0.15)]',
+                  isActive && 'bg-emerald-50 text-emerald-700 border border-emerald-300 shadow-sm',
                   // Completed
-                  isCompleted && canGo && 'bg-emerald-500/10 text-emerald-400/80 border border-emerald-500/20 hover:bg-emerald-500/15 hover:border-emerald-500/30 cursor-pointer',
+                  isCompleted && canGo && 'bg-emerald-50 text-emerald-600 border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 cursor-pointer',
                   // Accessible but not current
-                  !isActive && !isCompleted && canGo && 'bg-white/[0.04] text-slate-400 border border-white/[0.08] hover:bg-white/[0.08] hover:text-slate-300 cursor-pointer',
+                  !isActive && !isCompleted && canGo && 'bg-white text-slate-500 border border-gray-200 hover:bg-gray-50 hover:text-slate-700 cursor-pointer',
                   // Disabled
-                  !canGo && 'bg-white/[0.02] text-slate-600 border border-white/[0.04] cursor-not-allowed',
+                  !canGo && 'bg-gray-50 text-slate-400 border border-gray-100 cursor-not-allowed',
                 )}
               >
                 {isCompleted ? (
-                  <span className="flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500/20 border border-emerald-500/40">
-                    <Check className="w-3 h-3 text-emerald-400" />
+                  <span className="flex items-center justify-center w-5 h-5 rounded-full bg-emerald-100 border border-emerald-300">
+                    <Check className="w-3 h-3 text-emerald-600" />
                   </span>
                 ) : isActive ? (
-                  <span className="flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 text-black text-[10px] font-bold shadow-[0_0_8px_rgba(16,185,129,0.4)]">
+                  <span className="flex items-center justify-center w-5 h-5 rounded-full bg-emerald-600 text-white text-[10px] font-bold">
                     {stepNum}
                   </span>
                 ) : (
-                  <span className="flex items-center justify-center w-5 h-5 rounded-full bg-white/[0.06] border border-white/[0.1] text-[10px] font-medium text-slate-500">
+                  <span className="flex items-center justify-center w-5 h-5 rounded-full bg-gray-100 border border-gray-200 text-[10px] font-medium text-slate-500">
                     {stepNum}
                   </span>
                 )}
@@ -73,7 +73,7 @@ export function WizardSteps() {
                 {isActive && (
                   <motion.div
                     layoutId="stepGlow"
-                    className="absolute inset-0 rounded-full border border-emerald-500/30"
+                    className="absolute inset-0 rounded-full border border-emerald-300"
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                   />
                 )}
@@ -84,8 +84,8 @@ export function WizardSteps() {
                   <div className={cn(
                     'h-[1px] w-full transition-all duration-500',
                     currentStep > stepNum
-                      ? 'bg-gradient-to-r from-emerald-500/60 to-emerald-500/30'
-                      : 'bg-white/[0.06]'
+                      ? 'bg-emerald-400'
+                      : 'bg-gray-200'
                   )} />
                 </div>
               )}
